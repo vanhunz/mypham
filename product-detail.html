@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Sản Phẩm - ROSELLE COSMETICS</title>
+  <meta name="description" content="Chi tiết sản phẩm mỹ phẩm cao cấp chính hãng tại Roselle Cosmetics.">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-message">
+        ✨ <span>ĐẶC QUYỀN HOÀNG GIA:</span> Nhập mã <strong>ROSELLE10</strong> giảm ngay 10% & Miễn phí vận chuyển từ 499K 👑
+      </div>
+      <div class="topbar-links">
+        <a href="exclusive.html"><i class="fas fa-crown" style="color: var(--royal-gold-light);"></i> Bộ Sưu Tập Độc Quyền</a>
+        <a href="account.html#trackingTab"><i class="fas fa-shipping-fast"></i> Tra cứu vận đơn</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <div class="logo-img-wrap">
+            <img src="assets/logo.jpg" alt="Roselle Logo" class="logo-img">
+          </div>
+          <div class="logo-text-box">
+            <span class="logo-brand-name">ROSELLE <span>COSMETICS</span></span>
+            <span class="logo-tagline">Mỹ Phẩm Hoàng Gia</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link active">Sản phẩm</a></li>
+          <li class="nav-item"><a href="exclusive.html" class="nav-link exclusive-link">👑 Độc quyền <span class="badge-exclusive-dot"></span></a></li>
+          <li class="nav-item"><a href="products.html?category=all" class="nav-link">Khuyến mãi</a></li>
+          <li class="nav-item"><a href="index.html#aboutSection" class="nav-link">Về Roselle</a></li>
+          <li class="nav-item"><a href="index.html#contactSection" class="nav-link">Liên hệ</a></li>
+        </ul>
+
+        <!-- Right Header Actions -->
+        <div class="nav-actions">
+          <button class="action-btn btn-search-trigger" title="Tìm kiếm"><i class="fas fa-search"></i></button>
+          <a href="account.html#wishlistTab" class="action-btn" title="Yêu thích"><i class="far fa-heart"></i><span class="badge-count wishlist-count-badge">0</span></a>
+          <a href="login.html" class="action-btn" title="Tài khoản"><i class="far fa-user"></i></a>
+          <a href="cart.html" class="action-btn" title="Giỏ hàng"><i class="fas fa-shopping-bag"></i><span class="badge-count cart-count-badge">0</span></a>
+          <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb Navigation -->
+  <div style="background-color: var(--rose-bubble); border-bottom: 1px solid var(--border-subtle); padding: 14px 0;">
+    <div class="container">
+      <div class="breadcrumb" style="justify-content: flex-start;" id="productDetailBreadcrumb">
+        <a href="index.html">Trang chủ</a> <span>/</span>
+        <a href="products.html">Sản phẩm</a> <span>/</span>
+        <span>Chi tiết sản phẩm</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Detail Core Layout -->
+  <section class="container" id="productDetailSection" style="padding-top: 40px; padding-bottom: 60px;">
+    <div class="product-detail-layout">
+      <!-- Gallery Column -->
+      <div class="detail-gallery">
+        <div class="detail-main-img-box">
+          <img src="" alt="Product Image" id="detailMainImg" class="detail-main-img">
+        </div>
+        <div class="detail-thumbnails" id="detailThumbnails">
+          <!-- Thumbnails rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Info Column -->
+      <div class="detail-info">
+        <span class="detail-brand" id="detailProductBrand">ROSELLE LUXE</span>
+        <h1 class="detail-title" id="detailProductTitle">Tên sản phẩm</h1>
+
+        <div class="detail-rating-row">
+          <div class="stars" id="detailRatingStars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <span class="rating-count" id="detailRatingCount">(142 đánh giá)</span>
+          <span style="color: var(--border-subtle);">|</span>
+          <span style="font-size: 0.82rem; color: var(--rose-primary); font-weight: 700;">Đã bán 2,450+ lượt</span>
+        </div>
+
+        <div class="detail-price-box">
+          <span class="detail-current-price" id="detailProductPrice">0đ</span>
+          <span class="detail-old-price" id="detailProductOldPrice"></span>
+          <span class="detail-save-badge">TIẾT KIỆM 20%</span>
+        </div>
+
+        <p class="detail-short-desc" id="detailDescription">
+          Mô tả sản phẩm đang được tải...
+        </p>
+
+        <!-- Variant Selector -->
+        <div style="margin: 18px 0;">
+          <label style="font-size: 0.86rem; font-weight: 700; color: var(--primary-noir); display: block; margin-bottom: 8px;">Chọn dung tích / Phiên bản:</label>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="variant-chip active" data-variant="Fullsize 50ml">Fullsize 50ml</button>
+            <button class="variant-chip" data-variant="Mini Travel 20ml">Mini Travel 20ml</button>
+            <button class="variant-chip" data-variant="Set Quà Tặng VIP">Set Quà Tặng VIP</button>
+          </div>
+        </div>
+
+        <div class="detail-meta-list">
+          <span><strong>Tình trạng:</strong> <span id="detailStockStatus"><i class="fas fa-check-circle" style="color: #10B981;"></i> Còn hàng</span></span>
+          <span><strong>Cam kết:</strong> 100% Mỹ phẩm cao cấp chính hãng Roselle nguyên seal</span>
+          <span><strong>Dịch vụ VIP:</strong> Hộp quà lụa nhung & Khắc tên laser miễn phí</span>
+        </div>
+
+        <!-- Quantity & Add to Cart -->
+        <div class="detail-actions-box">
+          <div class="quantity-control">
+            <button class="qty-btn" id="qtyMinusBtn">-</button>
+            <input type="text" id="detailQtyInput" class="qty-input" value="1" readonly>
+            <button class="qty-btn" id="qtyPlusBtn">+</button>
+          </div>
+
+          <button class="btn btn-primary" id="detailAddCartBtn" style="flex: 2; padding: 14px 20px;">
+            <i class="fas fa-shopping-bag"></i> THÊM VÀO GIỎ
+          </button>
+
+          <button class="btn btn-rose" id="detailBuyNowBtn" style="flex: 2; padding: 14px 20px;">
+            <i class="fas fa-crown"></i> MUA NGAY
+          </button>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="detail-perks-box">
+          <div class="perk-item">
+            <i class="fas fa-shipping-fast" style="color: var(--rose-primary);"></i>
+            <span>Giao hỏa tốc 2H</span>
+          </div>
+          <div class="perk-item">
+            <i class="fas fa-gift" style="color: var(--royal-gold);"></i>
+            <span>Hộp quà lụa nhung</span>
+          </div>
+          <div class="perk-item">
+            <i class="fas fa-undo" style="color: var(--rose-primary);"></i>
+            <span>Đổi trả 7 ngày</span>
+          </div>
+          <div class="perk-item">
+            <i class="fas fa-gem" style="color: var(--royal-gold);"></i>
+            <span>Tích điểm đổi quà</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Tabs (Mô tả, Thành phần, HDSD, Đánh giá) -->
+    <div class="product-tabs-container">
+      <div class="tabs-header">
+        <button class="tab-btn active" data-tab="tabDescription">MÔ TẢ CHI TIẾT</button>
+        <button class="tab-btn" data-tab="tabIngredients">BẢNG THÀNH PHẦN</button>
+        <button class="tab-btn" data-tab="tabUsage">HƯỚNG DẪN SỬ DỤNG</button>
+        <button class="tab-btn" data-tab="tabReviews">ĐÁNH GIÁ KHÁCH HÀNG</button>
+      </div>
+
+      <div class="tabs-content">
+        <div class="tab-pane active" id="tabDescription">
+          <div id="tabDescriptionContent"></div>
+        </div>
+
+        <div class="tab-pane" id="tabIngredients">
+          <div id="tabIngredientsContent"></div>
+        </div>
+
+        <div class="tab-pane" id="tabUsage">
+          <div id="tabUsageContent"></div>
+        </div>
+
+        <div class="tab-pane" id="tabReviews">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            <!-- Review Form -->
+            <div style="background: var(--rose-bubble); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="color: var(--primary-noir); margin-bottom: 12px;"><i class="fas fa-edit" style="color: var(--rose-primary);"></i> Gửi Đánh Giá Của Nàng</h4>
+              <form id="productReviewForm">
+                <div class="form-group">
+                  <label class="form-label">Đánh giá số sao:</label>
+                  <div class="star-rating-select" style="font-size: 1.3rem; color: #CBD5E1; cursor: pointer; display: flex; gap: 4px;">
+                    <i class="fas fa-star active" data-rating="1"></i>
+                    <i class="fas fa-star active" data-rating="2"></i>
+                    <i class="fas fa-star active" data-rating="3"></i>
+                    <i class="fas fa-star active" data-rating="4"></i>
+                    <i class="fas fa-star active" data-rating="5"></i>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Tên của nàng:</label>
+                  <input type="text" id="reviewAuthorName" class="form-control" placeholder="Ví dụ: Hoàng Yến..." required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Cảm nhận sau khi sử dụng:</label>
+                  <textarea id="reviewCommentText" class="form-control" rows="3" placeholder="Sản phẩm dùng rất thích, thơm dịu và da căng bóng..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-paper-plane"></i> GỬI ĐÁNH GIÁ</button>
+              </form>
+            </div>
+
+            <!-- Reviews List -->
+            <div id="reviewsListContainer" style="display: flex; flex-direction: column; gap: 14px;">
+              <div class="review-item-card" style="background: #FFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 16px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                  <div>
+                    <strong style="color: var(--primary-noir);">Minh Thư (Hà Nội)</strong>
+                    <span class="badge badge-success" style="font-size: 0.65rem; margin-left: 6px;"><i class="fas fa-check-circle"></i> Đã mua hàng</span>
+                    <div class="stars" style="font-size: 0.8rem; margin-top: 2px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                  </div>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">2 ngày trước</span>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--text-main); line-height: 1.6; margin: 0;">Sản phẩm giao siêu nhanh, đóng hộp nơ hoa hồng quý phái quá trời. Thoa lên da thấm mịn tức thì, da căng mướt suốt đêm!</p>
+              </div>
+
+              <div class="review-item-card" style="background: #FFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 16px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                  <div>
+                    <strong style="color: var(--primary-noir);">Phương Linh (TP.HCM)</strong>
+                    <span class="badge badge-success" style="font-size: 0.65rem; margin-left: 6px;"><i class="fas fa-check-circle"></i> Đã mua hàng</span>
+                    <div class="stars" style="font-size: 0.8rem; margin-top: 2px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                  </div>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">5 ngày trước</span>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--text-main); line-height: 1.6; margin: 0;">Đúng chuẩn hàng hiệu cao cấp Roselle, dùng 2 tuần da sáng mịn và mờ thâm rõ rệt. Rất đáng đồng tiền bát gạo!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Products -->
+    <div style="margin-top: 60px;">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fas fa-heart"></i> GỢI Ý CÙNG BỘ SƯU TẬP</span>
+        <h2 class="section-title">Sản Phẩm <span>Tương Tự</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="products-grid" id="relatedProductsGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 18px;">
+            <div class="logo-img-wrap">
+              <img src="assets/logo.jpg" alt="Roselle Logo" class="logo-img">
+            </div>
+            <div class="logo-text-box">
+              <span class="logo-brand-name">ROSELLE <span>COSMETICS</span></span>
+              <span class="logo-tagline">Mỹ Phẩm Hoàng Gia</span>
+            </div>
+          </a>
+          <p style="font-size: 0.88rem; color: #94A3B8; line-height: 1.7; margin-bottom: 20px;">
+            Thương hiệu mỹ phẩm cao cấp tôn vinh vẻ đẹp kiêu sa, quyến rũ và tỏa sáng của phái đẹp với những công thức thuần khiết và thiết kế hoàng gia.
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/roselle.cosmetics.vn" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook Fanpage Roselle"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Danh Mục Sản Phẩm</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=skincare"><i class="fas fa-angle-right"></i> Chăm Sóc Da (Skincare)</a></li>
+            <li><a href="products.html?category=makeup"><i class="fas fa-angle-right"></i> Trang Điểm Quý Cô</a></li>
+            <li><a href="products.html?category=son-moi"><i class="fas fa-angle-right"></i> Son Môi Hoàng Kim</a></li>
+            <li><a href="products.html?category=serum"><i class="fas fa-angle-right"></i> Serum & Tinh Chất Vàng</a></li>
+            <li><a href="products.html?category=kem-chong-nang"><i class="fas fa-angle-right"></i> Kem Chống Nắng Phổ Rộng</a></li>
+            <li><a href="products.html?category=nuoc-hoa"><i class="fas fa-angle-right"></i> Nước Hoa Niche Éclat</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Chính Sách Khách Hàng</h4>
+          <ul class="footer-links">
+            <li><a href="account.html#trackingTab"><i class="fas fa-angle-right"></i> Tra Cứu Vận Đơn Trực Tuyến</a></li>
+            <li><a href="exclusive.html"><i class="fas fa-angle-right"></i> Quyền Lợi Thành Viên VIP Club</a></li>
+            <li><a href="checkout.html"><i class="fas fa-angle-right"></i> Hướng Dẫn Thanh Toán VietQR</a></li>
+            <li><a href="index.html#aboutSection"><i class="fas fa-angle-right"></i> Chính Sách Đổi Trả 7 Ngày</a></li>
+            <li><a href="index.html#aboutSection"><i class="fas fa-angle-right"></i> Cam Kết Hàng Chính Hãng 100%</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Liên Hệ & Showroom</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt" style="color: var(--rose-primary);"></i>
+            <span>88 Đường Hoa Hồng, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt" style="color: var(--rose-primary);"></i>
+            <span>Hotline VIP: <strong>1800 6868</strong> (8:00 - 22:00)</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope" style="color: var(--rose-primary);"></i>
+            <span>Email hỗ trợ: <strong>cskh@roselle.vn</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <strong>ROSELLE COSMETICS CO., LTD</strong>. All rights reserved. Bản quyền thuộc về Mỹ Phẩm Cao Cấp Roselle.</p>
+        <p style="font-size: 0.78rem; color: #64748B;">Giấy phép kinh doanh số: 0318889999 do Sở Kế Hoạch & Đầu Tư TP.HCM cấp.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global Live Search Modal -->
+  <div class="search-modal">
+    <div class="search-modal-box">
+      <div class="search-modal-header">
+        <div style="display: flex; align-items: center; gap: 10px; width: 100%;">
+          <i class="fas fa-search" style="color: var(--rose-primary); font-size: 1.2rem;"></i>
+          <input type="text" id="globalSearchInput" placeholder="Tìm kiếm mỹ phẩm Roselle..." autocomplete="off">
+        </div>
+        <button class="search-close" title="Đóng">&times;</button>
+      </div>
+      <div class="search-results-list" id="searchResultsList"></div>
+    </div>
+  </div>
+
+  <!-- Floating Roselle Beauty AI Chatbot -->
+  <div class="floating-chat-widget">
+    <button class="chat-toggle-btn" title="Tư vấn sắc đẹp Roselle">
+      <i class="fas fa-comment-dots"></i>
+      <span class="chat-pulse"></span>
+    </button>
+    <div class="chat-box-modal">
+      <div class="chat-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <img src="assets/logo.jpg" alt="Roselle" style="width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid #FFF;">
+          <div>
+            <h5 style="color: #FFF; margin: 0; font-size: 0.9rem;">Roselle Beauty Assistant</h5>
+            <span style="font-size: 0.72rem; color: #FDA4AF;"><i class="fas fa-circle" style="font-size: 0.5rem; color: #10B981;"></i> Đang trực tuyến</span>
+          </div>
+        </div>
+        <button class="chat-close-btn" title="Đóng">&times;</button>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <div class="chat-msg bot">
+          Xin chào nàng! 🌸 Nàng cần tư vấn thêm về công dụng hay bảng thành phần của sản phẩm này không ạ?
+        </div>
+      </div>
+      <div class="chat-chips-box">
+        <span class="chat-chip">🌸 Thành phần chi tiết</span>
+        <span class="chat-chip">✨ Cách dùng hiệu quả</span>
+        <span class="chat-chip">👑 Ưu đãi VIP</span>
+      </div>
+      <div class="chat-footer">
+        <input type="text" id="chatInput" placeholder="Nhập câu hỏi..." autocomplete="off">
+        <button id="chatSendBtn" class="btn btn-rose btn-sm" style="border-radius: 50%; width: 36px; height: 36px; padding: 0;"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

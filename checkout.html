@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh Toán An Toàn - ROSELLE COSMETICS</title>
+  <meta name="description" content="Thanh toán an toàn, bảo mật và tiện lợi đa phương thức VietQR, Thẻ quốc tế, Ví MoMo, COD tại Roselle Cosmetics.">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-message">
+        👑 <span>VIP ROSELLE PRIVILEGE:</span> Hộp quà bọc lụa nhung & Khắc tên miễn phí cho mọi đơn hàng hôm nay
+      </div>
+      <div class="topbar-links">
+        <a href="account.html#trackingTab"><i class="fas fa-shipping-fast"></i> Tra cứu đơn hàng</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-img-wrap">
+            <img src="assets/logo.jpg" alt="Roselle Logo" class="logo-img">
+          </div>
+          <div class="logo-text-box">
+            <span class="logo-brand-name">ROSELLE <span>COSMETICS</span></span>
+            <span class="logo-tagline">Mỹ Phẩm Hoàng Gia</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link">Sản phẩm</a></li>
+          <li class="nav-item"><a href="exclusive.html" class="nav-link exclusive-link">👑 Độc quyền <span class="badge-exclusive-dot"></span></a></li>
+          <li class="nav-item"><a href="products.html?category=all" class="nav-link">Khuyến mãi</a></li>
+          <li class="nav-item"><a href="index.html#aboutSection" class="nav-link">Về Roselle</a></li>
+          <li class="nav-item"><a href="index.html#contactSection" class="nav-link">Liên hệ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="action-btn btn-search-trigger" title="Tìm kiếm"><i class="fas fa-search"></i></button>
+          <a href="account.html#wishlistTab" class="action-btn" title="Yêu thích"><i class="far fa-heart"></i><span class="badge-count wishlist-count-badge">0</span></a>
+          <a href="login.html" class="action-btn" title="Tài khoản"><i class="far fa-user"></i></a>
+          <a href="cart.html" class="action-btn" title="Giỏ hàng"><i class="fas fa-shopping-bag"></i><span class="badge-count cart-count-badge">0</span></a>
+          <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Thanh Toán Đơn Hàng Roselle</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Trang chủ</a> <span>/</span>
+        <a href="cart.html">Giỏ hàng</a> <span>/</span>
+        <span>Thanh toán</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checkout Section -->
+  <section class="container" style="padding-top: 40px; padding-bottom: 60px;">
+    <form id="checkoutForm">
+      <div class="checkout-layout">
+        <!-- Form Left Column -->
+        <div>
+          <!-- Section 1: Customer Information -->
+          <div class="checkout-section-card">
+            <h3><i class="fas fa-heart" style="color: var(--rose-primary);"></i> 1. Thông Tin Nhận Hàng</h3>
+            
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="checkoutName">Họ và tên người nhận *</label>
+                <input type="text" id="checkoutName" class="form-control" placeholder="Ví dụ: Hoàng Yến Linh" required>
+              </div>
+
+              <div class="form-group">
+                <label for="checkoutPhone">Số điện thoại nhận hàng *</label>
+                <input type="tel" id="checkoutPhone" class="form-control" placeholder="Ví dụ: 0988 666 888" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="checkoutEmail">Địa chỉ Email nhận hóa đơn điện tử</label>
+              <input type="email" id="checkoutEmail" class="form-control" placeholder="princess@roselle.vn">
+            </div>
+
+            <div class="form-group">
+              <label for="checkoutAddress">Địa chỉ giao hàng chi tiết *</label>
+              <input type="text" id="checkoutAddress" class="form-control" placeholder="Số nhà, tên đường, Phường/Xã, Quận/Huyện, Tỉnh/TP..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="checkoutNote">Lời nhắn hoặc tên muốn khắc laser lên quà tặng</label>
+              <textarea id="checkoutNote" class="form-control" rows="2" placeholder="Ví dụ: Khắc tên 'YEN LINH' lên nắp son, hoặc gói nơ hồng pastel giúp mình nhé..."></textarea>
+            </div>
+          </div>
+
+          <!-- Section 2: Payment Method Selection -->
+          <div class="checkout-section-card">
+            <h3><i class="fas fa-crown" style="color: var(--royal-gold);"></i> 2. Chọn Phương Thức Thanh Toán</h3>
+            
+            <div class="payment-method-list">
+              <!-- Method 1: VietQR Dynamic Banking -->
+              <label class="payment-method-item active">
+                <input type="radio" name="paymentMethod" value="BANKING" checked>
+                <div class="method-info">
+                  <div class="method-title">
+                    <i class="fas fa-qrcode" style="color: var(--royal-gold);"></i>
+                    <span>Chuyển khoản VietQR 24/7 (MB Bank / Vietcombank)</span>
+                    <span class="badge badge-sale" style="font-size: 0.65rem;">KHUYÊN DÙNG</span>
+                  </div>
+                  <p class="method-desc">Quét mã QR tự động điền số tiền & nội dung, xử lý nhanh trong 30 giây.</p>
+                </div>
+              </label>
+
+              <!-- Dynamic VietQR Accordion Box -->
+              <div id="vietqrPaymentBox" class="vietqr-payment-box" style="display: block;">
+                <div class="vietqr-grid">
+                  <div class="vietqr-img-box">
+                    <img id="vietqrImage" src="https://api.vietqr.io/image/970422-888866669999-q8eU1K9.jpg?accountName=CONG%20TY%20CP%20MY%20PHAM%20ROSELLE&amount=1250000&addInfo=ROS888" alt="VietQR Roselle Cosmetics">
+                    <span style="font-size: 0.72rem; color: var(--text-muted); display: block; margin-top: 6px;">Mở ứng dụng ngân hàng để quét mã QR</span>
+                  </div>
+                  <div class="vietqr-info-col">
+                    <h5 style="color: var(--primary-noir); font-size: 0.95rem; margin-bottom: 8px;">Thông tin chuyển khoản ngân hàng:</h5>
+                    
+                    <div class="bank-field">
+                      <span class="bank-label">Ngân hàng:</span>
+                      <strong class="bank-val">MB BANK (Ngân hàng Quân Đội)</strong>
+                    </div>
+
+                    <div class="bank-field">
+                      <span class="bank-label">Số tài khoản:</span>
+                      <strong class="bank-val" style="color: var(--rose-primary);">8888 6666 9999</strong>
+                      <button type="button" class="btn-copy-info" data-copy="888866669999"><i class="far fa-copy"></i> Sao chép</button>
+                    </div>
+
+                    <div class="bank-field">
+                      <span class="bank-label">Chủ tài khoản:</span>
+                      <strong class="bank-val">CONG TY CP MY PHAM ROSELLE</strong>
+                    </div>
+
+                    <div class="bank-field">
+                      <span class="bank-label">Số tiền:</span>
+                      <strong class="bank-val" id="vietqrAmountDisplay" style="color: var(--rose-primary); font-size: 1.05rem;">1.250.000đ</strong>
+                      <button type="button" class="btn-copy-info" data-copy="1250000"><i class="far fa-copy"></i> Sao chép</button>
+                    </div>
+
+                    <div class="bank-field">
+                      <span class="bank-label">Nội dung CK:</span>
+                      <strong class="bank-val" id="vietqrMemoDisplay" style="color: var(--royal-gold-dark);">ROS888888</strong>
+                      <button type="button" class="btn-copy-info" data-copy="ROS888888"><i class="far fa-copy"></i> Sao chép</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Method 2: Credit Card -->
+              <label class="payment-method-item">
+                <input type="radio" name="paymentMethod" value="CARD">
+                <div class="method-info">
+                  <div class="method-title">
+                    <i class="fas fa-credit-card" style="color: var(--rose-primary);"></i>
+                    <span>Thẻ Tín Dụng Quốc Tế (Visa / Mastercard / JCB)</span>
+                  </div>
+                  <p class="method-desc">Cổng bảo mật SSL 256-bit chuẩn quốc tế.</p>
+                </div>
+              </label>
+
+              <!-- Credit Card Visual Box -->
+              <div id="cardPaymentBox" style="display: none; background: #FFFFFF; border: 1.5px solid var(--rose-light); border-radius: var(--radius-md); padding: 20px; margin-bottom: 12px;">
+                <!-- Card Simulator Preview -->
+                <div class="card-visual-preview">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <i class="fas fa-microchip" style="font-size: 1.8rem; color: #FDE047;"></i>
+                    <span style="font-family: var(--font-heading); font-weight: 800; letter-spacing: 0.1em; font-size: 1.1rem;">ROSELLE VIP</span>
+                  </div>
+                  <div id="cardPreviewNumber" class="card-num-preview">•••• •••• •••• ••••</div>
+                  <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                    <div>
+                      <span style="font-size: 0.65rem; text-transform: uppercase; opacity: 0.8; display: block;">Chủ thẻ</span>
+                      <span id="cardPreviewHolder" style="font-weight: 700; font-size: 0.88rem; letter-spacing: 0.05em;">NGOC HAN ROSELLE</span>
+                    </div>
+                    <div>
+                      <span style="font-size: 0.65rem; text-transform: uppercase; opacity: 0.8; display: block;">Hạn thẻ</span>
+                      <span id="cardPreviewExpiry" style="font-weight: 700; font-size: 0.88rem;">12/28</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 16px;">
+                  <label class="form-label">Số thẻ tín dụng:</label>
+                  <input type="text" id="cardNumInput" class="form-control" placeholder="4123 4567 8901 2345" maxlength="19">
+                </div>
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label">Tên in trên thẻ:</label>
+                    <input type="text" id="cardNameInput" class="form-control" placeholder="NGUYEN THI ANH" style="text-transform: uppercase;">
+                  </div>
+                  <div class="form-grid-2" style="gap: 10px;">
+                    <div class="form-group">
+                      <label class="form-label">Hạn thẻ (MM/YY):</label>
+                      <input type="text" id="cardExpInput" class="form-control" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">Mã CVV:</label>
+                      <input type="password" id="cardCvvInput" class="form-control" placeholder="123" maxlength="4">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Method 3: MoMo -->
+              <label class="payment-method-item">
+                <input type="radio" name="paymentMethod" value="MOMO">
+                <div class="method-info">
+                  <div class="method-title">
+                    <i class="fas fa-wallet" style="color: #A21058;"></i>
+                    <span>Ví Điện Tử MoMo</span>
+                  </div>
+                  <p class="method-desc">Quét mã QR MoMo chuyển tiền tức thì.</p>
+                </div>
+              </label>
+
+              <!-- Method 4: COD -->
+              <label class="payment-method-item">
+                <input type="radio" name="paymentMethod" value="COD">
+                <div class="method-info">
+                  <div class="method-title">
+                    <i class="fas fa-truck" style="color: var(--rose-primary);"></i>
+                    <span>Thanh toán tiền mặt khi nhận hàng (COD)</span>
+                  </div>
+                  <p class="method-desc">Được kiểm tra hộp quà và chất lượng sản phẩm trước khi thanh toán.</p>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary Right Column -->
+        <div class="checkout-summary-card">
+          <h3 class="summary-title"><i class="fas fa-gift" style="color: var(--rose-primary);"></i> HỘP QUÀ ĐẶT HÀNG</h3>
+          
+          <div id="checkoutOrderItems">
+            <!-- Dynamic checkout items -->
+          </div>
+
+          <!-- Coupon Box -->
+          <div style="margin: 16px 0 10px;">
+            <span style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 6px;">Mã ưu đãi có sẵn:</span>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+              <span class="coupon-chip" data-code="ROSELLE10">ROSELLE10</span>
+              <span class="coupon-chip" data-code="FREESHIP">FREESHIP</span>
+              <span class="coupon-chip" data-code="WELCOME50">WELCOME50</span>
+            </div>
+          </div>
+
+          <div class="coupon-box" style="margin-bottom: 16px;">
+            <input type="text" id="checkoutCouponInput" class="coupon-input" placeholder="Nhập mã ưu đãi...">
+            <button type="button" id="checkoutCouponBtn" class="coupon-btn">ÁP DỤNG</button>
+          </div>
+
+          <div style="margin-top: 16px; border-top: 1px dashed var(--border-subtle); padding-top: 14px;">
+            <div class="summary-row">
+              <span>Tạm tính:</span>
+              <strong id="checkoutSubtotal">0đ</strong>
+            </div>
+            <div class="summary-row">
+              <span>Giảm giá voucher:</span>
+              <span id="checkoutDiscount" style="color: var(--rose-primary); font-weight: 700;">0đ</span>
+            </div>
+            <div class="summary-row">
+              <span>Phí vận chuyển:</span>
+              <span id="checkoutShipping" style="color: #10B981; font-weight: 600;">Miễn phí</span>
+            </div>
+            <div class="summary-total-row">
+              <span>Tổng thanh toán:</span>
+              <span class="total-amount" id="checkoutGrandTotal">0đ</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top: 24px; padding: 16px; font-size: 1.05rem;">
+            <i class="fas fa-crown"></i> XÁC NHẬN ĐẶT HÀNG
+          </button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Order Success Modal Overlay with Live Stepper & VAT Invoice Print -->
+  <div class="order-success-modal" id="orderSuccessModal">
+    <div class="modal-card" style="background: #FFFFFF; border-radius: 24px; padding: 36px; border: 2px solid var(--rose-primary); max-width: 600px; margin: 0 auto; box-shadow: var(--shadow-lg);">
+      <div style="text-align: center; margin-bottom: 20px;">
+        <div style="width: 70px; height: 70px; background: var(--rose-bubble); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; font-size: 2rem; color: var(--rose-primary);">
+          <i class="fas fa-crown"></i>
+        </div>
+        <h2 style="font-size: 1.7rem; color: var(--primary-noir); margin-bottom: 6px;">ĐẶT HÀNG THÀNH CÔNG!</h2>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">
+          Cảm ơn nàng đã tin tưởng lựa chọn Roselle Cosmetics. Hộp quà hoàng gia đang được chuẩn bị để trao tận tay nàng!
+        </p>
+      </div>
+      
+      <!-- Order Code and Info -->
+      <div style="background: var(--rose-bubble); padding: 16px; border-radius: var(--radius-md); margin-bottom: 20px; border: 1px dashed var(--rose-light);">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+          <span style="font-size: 0.82rem; color: var(--text-muted);">Mã vận đơn:</span>
+          <strong style="color: var(--rose-primary); font-family: var(--font-heading); font-size: 1.1rem;" id="successOrderCode">ROS-888888</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+          <span style="font-size: 0.82rem; color: var(--text-muted);">Tổng thanh toán:</span>
+          <strong style="color: var(--primary-noir); font-family: var(--font-heading); font-size: 1.1rem;" id="successOrderTotal">0đ</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="font-size: 0.82rem; color: var(--text-muted);">Người nhận:</span>
+          <span style="font-size: 0.84rem; font-weight: 600; color: var(--text-main);" id="successOrderCustomer">Ngọc Hân Roselle</span>
+        </div>
+      </div>
+
+      <!-- 5-Stage Live Stepper Preview -->
+      <div style="margin-bottom: 24px;">
+        <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary-noir); display: block; margin-bottom: 10px;">Lộ trình xử lý đơn hàng:</span>
+        <div class="tracking-stepper">
+          <div class="step-item completed">
+            <div class="step-circle">✓</div>
+            <div class="step-label">Đặt hàng</div>
+          </div>
+          <div class="step-item completed">
+            <div class="step-circle">✓</div>
+            <div class="step-label">Tiếp nhận</div>
+          </div>
+          <div class="step-item active">
+            <div class="step-circle">3</div>
+            <div class="step-label">Đóng gói lụa</div>
+          </div>
+          <div class="step-item">
+            <div class="step-circle">4</div>
+            <div class="step-label">Vận chuyển</div>
+          </div>
+          <div class="step-item">
+            <div class="step-circle">5</div>
+            <div class="step-label">Giao hàng</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <button type="button" id="btnPrintInvoice" class="btn btn-outline" style="flex: 1;"><i class="fas fa-print"></i> IN HÓA ĐƠN</button>
+        <a href="account.html#ordersTab" class="btn btn-rose" style="flex: 1;"><i class="fas fa-box-open"></i> QUẢN LÝ ĐƠN</a>
+        <a href="index.html" class="btn btn-primary" style="flex: 1;"><i class="fas fa-home"></i> TRANG CHỦ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 18px;">
+            <div class="logo-img-wrap">
+              <img src="assets/logo.jpg" alt="Roselle Logo" class="logo-img">
+            </div>
+            <div class="logo-text-box">
+              <span class="logo-brand-name">ROSELLE <span>COSMETICS</span></span>
+              <span class="logo-tagline">Mỹ Phẩm Hoàng Gia</span>
+            </div>
+          </a>
+          <p style="font-size: 0.88rem; color: #94A3B8; line-height: 1.7; margin-bottom: 20px;">
+            Thương hiệu mỹ phẩm cao cấp tôn vinh vẻ đẹp kiêu sa, quyến rũ và tỏa sáng của phái đẹp với những công thức thuần khiết và thiết kế hoàng gia.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Chính Sách Khách Hàng</h4>
+          <ul class="footer-links">
+            <li><a href="account.html#trackingTab"><i class="fas fa-angle-right"></i> Tra Cứu Vận Đơn Trực Tuyến</a></li>
+            <li><a href="exclusive.html"><i class="fas fa-angle-right"></i> Quyền Lợi Thành Viên VIP Club</a></li>
+            <li><a href="checkout.html"><i class="fas fa-angle-right"></i> Hướng Dẫn Thanh Toán VietQR</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Hotline Hỗ Trợ</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt" style="color: var(--rose-primary);"></i>
+            <span>Hotline VIP: <strong>1800 6868</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <strong>ROSELLE COSMETICS CO., LTD</strong>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

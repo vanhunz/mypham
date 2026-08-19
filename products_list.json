@@ -1,0 +1,642 @@
+[
+  {
+    "id": 1,
+    "name": "Serum Phục Hồi & Trẻ Hóa Da Tế Bào Gốc Bio-Cellular",
+    "brand": "ROSELLE LUXE",
+    "category": "skincare",
+    "categoryName": "Skincare",
+    "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Kem Dưỡng Tái Cấu Trúc Trứng Cá Tầm Caviar Royal Cream",
+    "brand": "ROSELLE ATELIER",
+    "category": "skincare",
+    "categoryName": "Skincare",
+    "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Dầu Tẩy Trang Tinh Dầu Hoa Hồng Damask Rose Cleansing Elixir",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "skincare",
+    "categoryName": "Skincare",
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Mặt Nạ Ngủ Thạch Collagen Ngọc Trai Pearl Sleeping Jelly",
+    "brand": "ROSELLE ROYAL",
+    "category": "skincare",
+    "categoryName": "Skincare",
+    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Nước Hoa Hồng Cánh Hoa Tươi Hữu Cơ Rose Petal Toner",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "skincare",
+    "categoryName": "Skincare",
+    "image": "https://images.unsplash.com/photo-1563178406-4cdc2923acbc?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Kem Dưỡng Trắng & Cấp Ẩm Tế Bào Gốc Edelweiss Silk",
+    "brand": "ROSELLE LUXE",
+    "category": "skincare",
+    "categoryName": "Skincare",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Sữa Rửa Mặt Bọt Mây Cúc La Mã Chamomile Cloud Foam",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "skincare",
+    "categoryName": "Skincare",
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Kem Mắt Kim Cương Xóa Quầng Thâm Diamond Eye Elixir",
+    "brand": "ROSELLE ATELIER",
+    "category": "skincare",
+    "categoryName": "Skincare",
+    "image": "https://images.unsplash.com/photo-1576426863848-c21f53c60b19?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Tẩy Da Chết Mặt Hạnh Nhân & Đường Mía Almond Polish",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "skincare",
+    "categoryName": "Skincare",
+    "image": "https://images.unsplash.com/photo-1519735777090-ec97162dc266?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 10,
+    "name": "Xịt Khoáng Tinh Chất Ngọc Trai & Hoa Sen Tuyết Pearl Mist",
+    "brand": "ROSELLE ROYAL",
+    "category": "skincare",
+    "categoryName": "Skincare",
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 11,
+    "name": "Phấn Nước Cushion Che Phủ Hoàn Hảo Luminous Glow SPF 45",
+    "brand": "ROSELLE LUXE",
+    "category": "makeup",
+    "categoryName": "Makeup",
+    "image": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 12,
+    "name": "Bảng Phấn Mắt 12 Ô Hoàng Gia Grand Velvet Palette",
+    "brand": "ROSELLE ATELIER",
+    "category": "makeup",
+    "categoryName": "Makeup",
+    "image": "assets/products/p12.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Bảng Phấn Mắt Vương Miện Công Chúa Roselle Tiara Palette",
+    "brand": "ROSELLE ATELIER",
+    "category": "makeup",
+    "categoryName": "Makeup",
+    "image": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 14,
+    "name": "Má Hồng Dạng Kem Trái Đào Sweet Peach Cream Blush",
+    "brand": "ROSELLE GLAM",
+    "category": "makeup",
+    "categoryName": "Makeup",
+    "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 15,
+    "name": "Phấn Phủ Bột Ngọc Trai Kiềm Dầu Mịn Màng Pearl Powder",
+    "brand": "ROSELLE LUXE",
+    "category": "makeup",
+    "categoryName": "Makeup",
+    "image": "https://images.unsplash.com/photo-1503236823255-94609f598e71?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 16,
+    "name": "Mascara Chuốt Mi Cánh Bướm Uốn Cong Butterfly Lash",
+    "brand": "ROSELLE GLAM",
+    "category": "makeup",
+    "categoryName": "Makeup",
+    "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 17,
+    "name": "Kem Lót Ngọc Trai Glowy Illuminating Primer",
+    "brand": "ROSELLE ROYAL",
+    "category": "makeup",
+    "categoryName": "Makeup",
+    "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 18,
+    "name": "Bút Kẻ Mắt Dạ Nét Mảnh Chống Nước Precision Royal Liner",
+    "brand": "ROSELLE GLAM",
+    "category": "makeup",
+    "categoryName": "Makeup",
+    "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 19,
+    "name": "Bảng Bắt Sáng Kim Cương Hoàng Gia Diamond Glow Palette",
+    "brand": "ROSELLE ATELIER",
+    "category": "makeup",
+    "categoryName": "Makeup",
+    "image": "assets/products/p12.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Xịt Khóa Nền Glitter Lấp Lánh Shimmer Setting Spray",
+    "brand": "ROSELLE LUXE",
+    "category": "makeup",
+    "categoryName": "Makeup",
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 21,
+    "name": "Son Kem Lì Nhung Mịn Velvet Rose Tint #08 Rouge Noir",
+    "brand": "ROSELLE ATELIER",
+    "category": "son-moi",
+    "categoryName": "Son môi",
+    "image": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 22,
+    "name": "Son Thỏi Vương Miện Hoàng Kim Royal Jewel Lipstick #01 Crown Red",
+    "brand": "ROSELLE ATELIER",
+    "category": "son-moi",
+    "categoryName": "Son môi",
+    "image": "https://images.unsplash.com/photo-1599733589046-10c005739ef9?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 23,
+    "name": "Son Bóng Pha Lê Thạch Gương Crystal Jelly Lip Gloss #03 Sakura",
+    "brand": "ROSELLE GLAM",
+    "category": "son-moi",
+    "categoryName": "Son môi",
+    "image": "https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 24,
+    "name": "Son Thỏi Lì Nhung Mịn Soft Matte #05 Coral Dream",
+    "brand": "ROSELLE LUXE",
+    "category": "son-moi",
+    "categoryName": "Son môi",
+    "image": "https://images.unsplash.com/photo-1631730486784-5456119f69ae?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 25,
+    "name": "Son Dưỡng Cánh Hoa Mật Ong Rose Honey Lip Balm",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "son-moi",
+    "categoryName": "Son môi",
+    "image": "https://images.unsplash.com/photo-1631214500115-598fc2cb8d2d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 26,
+    "name": "Son Kem Bùn Xốp Mịn Marshmallow Pink Velvet Tint",
+    "brand": "ROSELLE LUXE",
+    "category": "son-moi",
+    "categoryName": "Son môi",
+    "image": "https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 27,
+    "name": "Son Kem Bóng Khóa Màu Water Tint #02 Strawberry Milk",
+    "brand": "ROSELLE GLAM",
+    "category": "son-moi",
+    "categoryName": "Son môi",
+    "image": "https://images.unsplash.com/photo-1591360236480-4ed861025fa1?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 28,
+    "name": "Son Thỏi Dưỡng Tinh Dầu Hoa Trà Camellia Lip Butter",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "son-moi",
+    "categoryName": "Son môi",
+    "image": "https://images.unsplash.com/photo-1506152983158-b4a74a01c721?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 29,
+    "name": "Son Kem Nhũ Kim Cương 3D Fairy Diamond Lip Glaze",
+    "brand": "ROSELLE ATELIER",
+    "category": "son-moi",
+    "categoryName": "Son môi",
+    "image": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 30,
+    "name": "Set 5 Thỏi Son Mini Hoàng Gia Roselle Vault",
+    "brand": "ROSELLE ATELIER",
+    "category": "son-moi",
+    "categoryName": "Son môi",
+    "image": "https://images.unsplash.com/photo-1571875257727-256c39da42af?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 31,
+    "name": "Tinh Chất Vàng 24K Đặc Trị Nếp Nhăn Pure Aurum Elixir",
+    "brand": "ROSELLE ATELIER",
+    "category": "serum",
+    "categoryName": "Serum",
+    "image": "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 32,
+    "name": "Serum Phục Hồi Cấp Nước Hyaluronic Acid B5 Princess",
+    "brand": "ROSELLE LUXE",
+    "category": "serum",
+    "categoryName": "Serum",
+    "image": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 33,
+    "name": "Serum Dưỡng Trắng & Mờ Thâm Alpha Arbutin 5% + Niacinamide",
+    "brand": "ROSELLE ROYAL",
+    "category": "serum",
+    "categoryName": "Serum",
+    "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 34,
+    "name": "Serum Vitamin C 15% Tươi Chống Oxy Hóa Glow Booster",
+    "brand": "ROSELLE LUXE",
+    "category": "serum",
+    "categoryName": "Serum",
+    "image": "https://images.unsplash.com/photo-1552046122-03184de85e08?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 35,
+    "name": "Serum Niacinamide 10% + Zinc 1% Thu Nhỏ Lỗ Chân Lông",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "serum",
+    "categoryName": "Serum",
+    "image": "https://images.unsplash.com/photo-1508746829417-e6f548d8d6ed?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 36,
+    "name": "Serum Retinol 0.5% Tái Tạo Da Trẻ Hóa Ban Đêm",
+    "brand": "ROSELLE LUXE",
+    "category": "serum",
+    "categoryName": "Serum",
+    "image": "https://images.unsplash.com/photo-1564865878688-9a244444042a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 37,
+    "name": "Serum Peptide Tổ Yến Hoàng Gia Royal Bird's Nest",
+    "brand": "ROSELLE ATELIER",
+    "category": "serum",
+    "categoryName": "Serum",
+    "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 38,
+    "name": "Serum Rau Má Làm Dịu & Giảm Đỏ Centella Calming Elixir",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "serum",
+    "categoryName": "Serum",
+    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 39,
+    "name": "Serum Tế Bào Gốc Hoa Tuyết Nhung Alpine Stem Cell",
+    "brand": "ROSELLE LUXE",
+    "category": "serum",
+    "categoryName": "Serum",
+    "image": "https://images.unsplash.com/photo-1585232004423-244e0e6904e3?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 40,
+    "name": "Serum Collagen Thủy Phân Tươi Collagen Marine Booster",
+    "brand": "ROSELLE ROYAL",
+    "category": "serum",
+    "categoryName": "Serum",
+    "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 41,
+    "name": "Kem Chống Nắng Phổ Rộng Invisible Shield SPF 50+ PA++++",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "kem-chong-nang",
+    "categoryName": "Kem chống nắng",
+    "image": "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 42,
+    "name": "Kem Chống Nắng Nâng Tone Ngọc Trai Hồng Pink Glow SPF 50+",
+    "brand": "ROSELLE ROYAL",
+    "category": "kem-chong-nang",
+    "categoryName": "Kem chống nắng",
+    "image": "https://images.unsplash.com/photo-1599305090598-fe179d501227?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 43,
+    "name": "Sáp Chống Nắng Dạng Thỏi Tiện Lợi Glow Sun Stick SPF 50+",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "kem-chong-nang",
+    "categoryName": "Kem chống nắng",
+    "image": "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 44,
+    "name": "Sữa Chống Nắng Kiềm Dầu Mỏng Nhẹ Matte Milk SPF 50+",
+    "brand": "ROSELLE LUXE",
+    "category": "kem-chong-nang",
+    "categoryName": "Kem chống nắng",
+    "image": "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 45,
+    "name": "Kem Chống Nắng Cấp Nước Dịu Mát Water Drop Sunscreen",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "kem-chong-nang",
+    "categoryName": "Kem chống nắng",
+    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 46,
+    "name": "Kem Chống Nắng Thuần Khoáng Da Nhạy Cảm Pure Mineral",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "kem-chong-nang",
+    "categoryName": "Kem chống nắng",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 47,
+    "name": "Xịt Chống Nắng Toàn Thân Làm Mát Tức Thì Body Sun Mist",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "kem-chong-nang",
+    "categoryName": "Kem chống nắng",
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 48,
+    "name": "Kem Chống Nắng Hoàng Kim Tế Bào Gốc Royal Gold Sun Elixir",
+    "brand": "ROSELLE ATELIER",
+    "category": "kem-chong-nang",
+    "categoryName": "Kem chống nắng",
+    "image": "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 49,
+    "name": "Kem Chống Nắng Chống Ánh Sáng Xanh Blue Shield SPF 50+",
+    "brand": "ROSELLE LUXE",
+    "category": "kem-chong-nang",
+    "categoryName": "Kem chống nắng",
+    "image": "https://images.unsplash.com/photo-1576426863848-c21f53c60b19?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 50,
+    "name": "Kem Chống Nắng Thể Thao Kháng Nước Sport Shield SPF 50+",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "kem-chong-nang",
+    "categoryName": "Kem chống nắng",
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 51,
+    "name": "Sữa Dưỡng Thể Trắng Mịn Tinh Dầu Hoa Trà Camellia Body Silk",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "body-care",
+    "categoryName": "Body Care",
+    "image": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 52,
+    "name": "Sữa Tắm Nước Hoa Cánh Hoa Hồng Pháp French Rose Shower Gel",
+    "brand": "ROSELLE ATELIER",
+    "category": "body-care",
+    "categoryName": "Body Care",
+    "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 53,
+    "name": "Tẩy Tế Bào Chết Body Đường Mía & Dâu Tây Strawberry Sugar Scrub",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "body-care",
+    "categoryName": "Body Care",
+    "image": "https://images.unsplash.com/photo-1519735777090-ec97162dc266?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 54,
+    "name": "Bơ Dưỡng Thể Hạt Mỡ & Hạnh Nhân Cấp Ẩm Sâu Shea Butter",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "body-care",
+    "categoryName": "Body Care",
+    "image": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 55,
+    "name": "Xịt Thơm Toàn Thân & Tóc Hoa Anh Đào Cherry Blossom Mist",
+    "brand": "ROSELLE GLAM",
+    "category": "body-care",
+    "categoryName": "Body Care",
+    "image": "https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 56,
+    "name": "Kem Dưỡng Trắng & Nâng Cơ Vùng Cổ & Ngực Neck Pearl Cream",
+    "brand": "ROSELLE ATELIER",
+    "category": "body-care",
+    "categoryName": "Body Care",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 57,
+    "name": "Tinh Dầu Massage Body Hoa Oải Hương Lavender Relaxing Oil",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "body-care",
+    "categoryName": "Body Care",
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 58,
+    "name": "Sữa Dưỡng Thể Nhũ Kim Tuyến Shimmering Body Glow",
+    "brand": "ROSELLE ROYAL",
+    "category": "body-care",
+    "categoryName": "Body Care",
+    "image": "https://images.unsplash.com/photo-1563178406-4cdc2923acbc?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 59,
+    "name": "Muối Tắm Ngâm Bồn Thảo Mộc Hoàng Gia Royal Bath Salt",
+    "brand": "ROSELLE ATELIER",
+    "category": "body-care",
+    "categoryName": "Body Care",
+    "image": "https://images.unsplash.com/photo-1519735777090-ec97162dc266?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 60,
+    "name": "Kem Dưỡng Mềm Mượt Tay & Móng Hoa Linh Lan Hand Cream",
+    "brand": "ROSELLE ATELIER",
+    "category": "body-care",
+    "categoryName": "Body Care",
+    "image": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 61,
+    "name": "Dầu Gội & Dầu Xả Phục Hồi Tóc Biotin & Keratin Silk",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "hair-care",
+    "categoryName": "Hair Care",
+    "image": "https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 62,
+    "name": "Tinh Dầu Dưỡng Tóc Bóng Mượt Argan Princess Hair Elixir",
+    "brand": "ROSELLE ROYAL",
+    "category": "hair-care",
+    "categoryName": "Hair Care",
+    "image": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 63,
+    "name": "Mặt Nạ Ủ Tóc Collagen & Hoa Hồng Rose Collagen Mask",
+    "brand": "ROSELLE ATELIER",
+    "category": "hair-care",
+    "categoryName": "Hair Care",
+    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 64,
+    "name": "Xịt Dưỡng Tóc Chống Nhiệt & Hương Nước Hoa Hair Mist",
+    "brand": "ROSELLE GLAM",
+    "category": "hair-care",
+    "categoryName": "Hair Care",
+    "image": "https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 65,
+    "name": "Tẩy Tế Bào Chết Da Đầu Muối Biển Scalp Refresh Scrub",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "hair-care",
+    "categoryName": "Hair Care",
+    "image": "https://images.unsplash.com/photo-1519735777090-ec97162dc266?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 66,
+    "name": "Dầu Gội Khô Tạo Phồng Tức Thì Volume Dry Shampoo",
+    "brand": "ROSELLE LUXE",
+    "category": "hair-care",
+    "categoryName": "Hair Care",
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 67,
+    "name": "Tinh Chất Kích Thích Mọc Tóc Bưởi Hồng & Biotin Hair Booster",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "hair-care",
+    "categoryName": "Hair Care",
+    "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 68,
+    "name": "Kem Xả Khô Tạo Lọn Tóc Uốn Bồng Bềnh Curl Silk",
+    "brand": "ROSELLE ATELIER",
+    "category": "hair-care",
+    "categoryName": "Hair Care",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 69,
+    "name": "Bộ Gội Xả Tím Khử Ánh Vàng Giữ Màu Tóc Tẩy Purple Shield",
+    "brand": "ROSELLE LUXE",
+    "category": "hair-care",
+    "categoryName": "Hair Care",
+    "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 70,
+    "name": "Lược Massage Da Đầu Mạ Vàng Roselle Gold Cushion Brush",
+    "brand": "ROSELLE ATELIER",
+    "category": "hair-care",
+    "categoryName": "Hair Care",
+    "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 71,
+    "name": "Nước Hoa Niche Éclat D'Or Eau De Parfum 100ml",
+    "brand": "ROSELLE ATELIER",
+    "category": "nuoc-hoa",
+    "categoryName": "Nước hoa",
+    "image": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 72,
+    "name": "Nến Thơm Cao Cấp Tinh Dầu Thiên Nhiên Midnight Rose Scent",
+    "brand": "ROSELLE ATELIER",
+    "category": "nuoc-hoa",
+    "categoryName": "Nước hoa",
+    "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 73,
+    "name": "Nước Hoa Nữ Roselle Dream Floral EDP 50ml",
+    "brand": "ROSELLE ATELIER",
+    "category": "nuoc-hoa",
+    "categoryName": "Nước hoa",
+    "image": "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 74,
+    "name": "Nước Hoa Hoàng Gia Hương Gỗ & Hổ Phách Royal Amber Wood",
+    "brand": "ROSELLE ATELIER",
+    "category": "nuoc-hoa",
+    "categoryName": "Nước hoa",
+    "image": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 75,
+    "name": "Tinh Dầu Thơm Phòng Khuếch Tán White Jasmine Diffuser",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "nuoc-hoa",
+    "categoryName": "Nước hoa",
+    "image": "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 76,
+    "name": "Nước Hoa Dạng Lăn Bỏ Túi Tiện Lợi Rose Petal Roller EDP",
+    "brand": "ROSELLE ATELIER",
+    "category": "nuoc-hoa",
+    "categoryName": "Nước hoa",
+    "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 77,
+    "name": "Xịt Thơm Gối & Giường Ngủ Thư Giãn Sweet Dreams Mist",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "nuoc-hoa",
+    "categoryName": "Nước hoa",
+    "image": "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 78,
+    "name": "Nến Thơm Sáp Dừa Tinh Dầu Vanilla Warm Vanilla Glow",
+    "brand": "ROSELLE BOTANICALS",
+    "category": "nuoc-hoa",
+    "categoryName": "Nước hoa",
+    "image": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 79,
+    "name": "Nước Hoa Nữ Quyến Rũ Black Orchid & Peony EDP 50ml",
+    "brand": "ROSELLE LUXE",
+    "category": "nuoc-hoa",
+    "categoryName": "Nước hoa",
+    "image": "https://images.unsplash.com/photo-1582211594533-268f4f1edcb9?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 80,
+    "name": "Set 4 Chai Nước Hoa Mini Hoàng Gia Roselle Discovery Set",
+    "brand": "ROSELLE ATELIER",
+    "category": "nuoc-hoa",
+    "categoryName": "Nước hoa",
+    "image": "https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=800&q=80"
+  }
+]

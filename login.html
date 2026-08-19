@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Nhập / Đăng Ký - ROSELLE COSMETICS</title>
+  <meta name="description" content="Đăng nhập tài khoản thành viên Roselle Cosmetics để nhận đặc quyền hoàng gia và ưu đãi riêng.">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: var(--rose-bubble);">
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-message">
+        ✨ <span>ĐẶC QUYỀN HOÀNG GIA:</span> Đăng ký tài khoản thành viên mới nhận ngay Voucher <strong>50.000đ</strong> 🌸
+      </div>
+      <div class="topbar-links">
+        <a href="exclusive.html"><i class="fas fa-crown" style="color: var(--royal-gold-light);"></i> Bộ Sưu Tập Độc Quyền</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-img-wrap">
+            <img src="assets/logo.jpg" alt="Roselle Logo" class="logo-img">
+          </div>
+          <div class="logo-text-box">
+            <span class="logo-brand-name">ROSELLE <span>COSMETICS</span></span>
+            <span class="logo-tagline">Mỹ Phẩm Hoàng Gia</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link">Sản phẩm</a></li>
+          <li class="nav-item"><a href="exclusive.html" class="nav-link exclusive-link">👑 Độc quyền</a></li>
+          <li class="nav-item"><a href="account.html" class="nav-link">Tài khoản</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="action-btn" title="Giỏ hàng"><i class="fas fa-shopping-bag"></i><span class="badge-count cart-count-badge">0</span></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Auth Content Wrapper -->
+  <main class="auth-wrapper" style="padding: 50px 20px;">
+    <div class="auth-card">
+      <div class="text-center" style="margin-bottom: 20px;">
+        <div class="logo-img-wrap" style="margin: 0 auto 12px; width: 64px; height: 64px;">
+          <img src="assets/logo.jpg" alt="Roselle Logo" class="logo-img">
+        </div>
+        <h2 style="font-size: 1.5rem; color: var(--primary-noir); font-family: var(--font-heading); margin-top: 6px;">ROSELLE VIP CLUB</h2>
+        <p style="font-size: 0.82rem; color: var(--text-muted);">Đặc quyền chăm sóc sắc đẹp thượng lưu</p>
+      </div>
+
+      <!-- Tabs Switcher -->
+      <div class="auth-tabs">
+        <button class="auth-tab-btn active" data-tab="login">ĐĂNG NHẬP</button>
+        <button class="auth-tab-btn" data-tab="register">ĐĂNG KÝ MỚI</button>
+      </div>
+
+      <!-- Form 1: Đăng nhập -->
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Email hoặc Số điện thoại *</label>
+          <input type="text" id="loginEmail" class="form-control" placeholder="princess@roselle.vn hoặc 0988666888" required value="princess@roselle.vn">
+        </div>
+
+        <div class="form-group">
+          <label for="loginPassword">Mật khẩu *</label>
+          <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" required value="123">
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; font-size: 0.84rem;">
+          <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--text-dark);">
+            <input type="checkbox" checked style="accent-color: var(--rose-primary);"> Ghi nhớ tài khoản
+          </label>
+          <a href="#" id="btnForgotPass" style="color: var(--rose-primary); font-weight: 600;">Quên mật khẩu?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" style="padding: 14px; font-size: 1rem;">
+          <i class="fas fa-crown"></i> ĐĂNG NHẬP HOÀNG GIA
+        </button>
+
+        <div style="text-align: center; margin-top: 14px; font-size: 0.78rem; color: var(--text-muted); background: var(--rose-bubble); padding: 8px; border-radius: var(--radius-sm);">
+          💡 Tài khoản demo: <strong>princess@roselle.vn</strong> | Mật khẩu: <strong>123</strong>
+        </div>
+      </form>
+
+      <!-- Form 2: Đăng ký -->
+      <form id="registerForm" style="display: none;">
+        <div class="form-group">
+          <label for="regName">Họ và tên của nàng *</label>
+          <input type="text" id="regName" class="form-control" placeholder="Ví dụ: Hoàng Yến Linh" required>
+        </div>
+
+        <div class="form-group">
+          <label for="regEmail">Địa chỉ Email *</label>
+          <input type="email" id="regEmail" class="form-control" placeholder="princess@roselle.vn" required>
+        </div>
+
+        <div class="form-group">
+          <label for="regPhone">Số điện thoại *</label>
+          <input type="tel" id="regPhone" class="form-control" placeholder="0988 666 888" required>
+        </div>
+
+        <div class="form-group">
+          <label for="regPassword">Mật khẩu bảo mật *</label>
+          <input type="password" id="regPassword" class="form-control" placeholder="Tối thiểu 6 ký tự" required>
+        </div>
+
+        <div class="form-group">
+          <label for="regPasswordConfirm">Xác nhận lại mật khẩu *</label>
+          <input type="password" id="regPasswordConfirm" class="form-control" placeholder="Nhập lại mật khẩu" required>
+        </div>
+
+        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px;">
+          Bằng việc đăng ký, bạn đồng ý với <a href="#" style="color: var(--rose-primary);">Điều khoản dịch vụ</a> và <a href="#" style="color: var(--rose-primary);">Chính sách bảo mật</a> của Roselle Cosmetics.
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" style="padding: 14px; font-size: 1rem;">
+          <i class="fas fa-sparkles"></i> ĐĂNG KÝ & NHẬN VOUCHER 50K
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Forgot Password OTP Modal -->
+  <div class="search-modal" id="forgotPasswordModal">
+    <div class="search-modal-box" style="max-width: 450px; padding: 30px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h4 style="color: var(--primary-noir); margin: 0;"><i class="fas fa-key" style="color: var(--rose-primary);"></i> Khôi Phục Mật Khẩu</h4>
+        <button class="search-close" id="forgotCloseBtn" title="Đóng">&times;</button>
+      </div>
+      <p style="font-size: 0.86rem; color: var(--text-muted); margin-bottom: 18px;">
+        Nhập địa chỉ Email hoặc Số điện thoại đã đăng ký để nhận mã xác thực OTP khôi phục mật khẩu.
+      </p>
+      <form onsubmit="event.preventDefault(); showToast('Đã gửi mã OTP', 'Mã xác nhận gồm 6 chữ số đã được gửi qua SMS/Email!', 'rose'); document.querySelector('#forgotPasswordModal').classList.remove('active');">
+        <div class="form-group">
+          <label class="form-label">Email hoặc Số điện thoại:</label>
+          <input type="text" class="form-control" placeholder="0988666888 hoặc princess@roselle.vn" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" style="padding: 12px;"><i class="fas fa-paper-plane"></i> GỬI MÃ XÁC THỰC</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>© 2026 <strong>ROSELLE COSMETICS CO., LTD</strong>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Engine -->
+  <script src="script.js"></script>
+</body>
+</html>

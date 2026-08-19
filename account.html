@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tài Khoản VIP - ROSELLE COSMETICS</title>
+  <meta name="description" content="Quản lý thông tin tài khoản thành viên, lịch sử đơn hàng, tra cứu vận đơn và danh sách yêu thích tại Roselle Cosmetics.">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-message">
+        👑 <span>VIP ROSELLE PRIVILEGE:</span> Nàng đang có <strong class="user-display-points">2,500</strong> điểm thưởng VIP (Tương đương 250.000đ) ✨
+      </div>
+      <div class="topbar-links">
+        <a href="exclusive.html"><i class="fas fa-crown" style="color: var(--royal-gold-light);"></i> Bộ Sưu Tập Độc Quyền</a>
+        <a href="index.html">Về trang chủ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <div class="logo-img-wrap">
+            <img src="assets/logo.jpg" alt="Roselle Logo" class="logo-img">
+          </div>
+          <div class="logo-text-box">
+            <span class="logo-brand-name">ROSELLE <span>COSMETICS</span></span>
+            <span class="logo-tagline">Mỹ Phẩm Hoàng Gia</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link">Sản phẩm</a></li>
+          <li class="nav-item"><a href="exclusive.html" class="nav-link exclusive-link">👑 Độc quyền</a></li>
+          <li class="nav-item"><a href="account.html" class="nav-link active">Tài khoản</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="action-btn btn-search-trigger" title="Tìm kiếm"><i class="fas fa-search"></i></button>
+          <a href="cart.html" class="action-btn" title="Giỏ hàng"><i class="fas fa-shopping-bag"></i><span class="badge-count cart-count-badge">0</span></a>
+          <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Trung Tâm Khách Hàng VIP Roselle</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Trang chủ</a> <span>/</span>
+        <span>Tài khoản cá nhân</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Account Layout -->
+  <section class="container" style="padding-top: 40px; padding-bottom: 60px;">
+    <div class="account-layout">
+      <!-- Sidebar -->
+      <aside class="account-sidebar">
+        <div class="account-user-card">
+          <img src="" alt="Avatar" class="account-avatar user-display-avatar">
+          <h4 style="font-size: 1.15rem; color: var(--primary-noir); font-family: var(--font-heading); margin-bottom: 4px;" class="user-display-name">Ngọc Hân Roselle</h4>
+          <span class="badge badge-gold" style="font-size: 0.75rem;"><i class="fas fa-crown"></i> <span class="user-display-tier">ROSELLE GOLD VIP</span></span>
+        </div>
+
+        <ul class="account-nav-list">
+          <li>
+            <a href="#overviewTab" class="account-nav-link active">
+              <i class="fas fa-crown"></i> <span>Tổng quan tài khoản</span>
+            </a>
+          </li>
+          <li>
+            <a href="#profileTab" class="account-nav-link">
+              <i class="fas fa-user-edit"></i> <span>Hồ sơ & Địa chỉ</span>
+            </a>
+          </li>
+          <li>
+            <a href="#ordersTab" class="account-nav-link">
+              <i class="fas fa-box-open"></i> <span>Đơn hàng của tôi</span>
+            </a>
+          </li>
+          <li>
+            <a href="#trackingTab" class="account-nav-link">
+              <i class="fas fa-shipping-fast"></i> <span>Tra cứu vận đơn</span>
+            </a>
+          </li>
+          <li>
+            <a href="#wishlistTab" class="account-nav-link">
+              <i class="fas fa-heart"></i> <span>Mỹ phẩm yêu thích</span>
+            </a>
+          </li>
+          <li>
+            <a href="#passwordTab" class="account-nav-link">
+              <i class="fas fa-lock"></i> <span>Đổi mật khẩu</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="btnLogout" class="account-nav-link" style="color: #E11D48;">
+              <i class="fas fa-sign-out-alt"></i> <span>Đăng xuất</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Dashboard Content -->
+      <main class="account-main-content">
+        <!-- 1. TAB: OVERVIEW -->
+        <div class="account-tab-pane" id="overviewTab">
+          <div class="account-stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon" style="color: var(--rose-primary); background: var(--rose-bubble);"><i class="fas fa-gift"></i></div>
+              <div class="stat-value">6</div>
+              <div class="stat-label">Hộp quà đã đặt</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon" style="color: var(--royal-gold); background: var(--royal-champagne);"><i class="fas fa-crown"></i></div>
+              <div class="stat-value user-display-points">2,500</div>
+              <div class="stat-label">Điểm thưởng VIP</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon" style="color: var(--rose-primary); background: var(--rose-bubble);"><i class="fas fa-heart"></i></div>
+              <div class="stat-value wishlist-count-badge">3</div>
+              <div class="stat-label">Mỹ phẩm yêu thích</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon" style="color: #10B981; background: #ECFDF5;"><i class="fas fa-tag"></i></div>
+              <div class="stat-value">4</div>
+              <div class="stat-label">Voucher đang có</div>
+            </div>
+          </div>
+
+          <!-- VIP Tier Benefit Box -->
+          <div style="background: linear-gradient(135deg, #FFF1F2 0%, #FFE4E6 100%); border: 1.5px solid var(--rose-light); border-radius: var(--radius-md); padding: 24px; margin-bottom: 24px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+              <div>
+                <h4 style="color: var(--primary-noir); font-size: 1.15rem; margin: 0;"><i class="fas fa-crown" style="color: var(--royal-gold);"></i> Hạng Hội Viên: <span class="user-display-tier">ROSELLE GOLD VIP</span></h4>
+                <span style="font-size: 0.82rem; color: var(--text-muted);">Tích lũy thêm 2.500 điểm để nâng hạng DIAMOND ROYAL VIP</span>
+              </div>
+              <span class="badge badge-exclusive">GIẢM 20% MỌI ĐƠN HÀNG</span>
+            </div>
+            <div style="height: 8px; background: #CBD5E1; border-radius: 99px; overflow: hidden; margin-bottom: 10px;">
+              <div style="height: 100%; width: 65%; background: var(--gradient-gold);"></div>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--text-muted);">
+              <span>Silver VIP (0đ)</span>
+              <strong style="color: var(--royal-gold-dark);">Gold VIP (Hiện tại)</strong>
+              <span>Diamond VIP (5.000 điểm)</span>
+            </div>
+          </div>
+
+          <!-- Account Quick Info Grid -->
+          <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-sm);">
+            <h4 style="color: var(--primary-noir); margin-bottom: 16px;"><i class="fas fa-id-card" style="color: var(--rose-primary);"></i> Thông Tin Tài Khoản</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-size: 0.9rem;">
+              <div><strong>Họ và tên:</strong> <span class="user-display-name">Ngọc Hân Roselle</span></div>
+              <div><strong>Email:</strong> <span class="user-display-email">princess@roselle.vn</span></div>
+              <div><strong>Số điện thoại:</strong> <span class="user-display-phone">0988 666 888</span></div>
+              <div><strong>Ngày gia nhập:</strong> <span>15/01/2026</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. TAB: PROFILE & ADDRESS EDIT -->
+        <div class="account-tab-pane" id="profileTab" style="display: none;">
+          <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 26px; box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--primary-noir); font-size: 1.25rem; margin-bottom: 20px;"><i class="fas fa-user-edit" style="color: var(--rose-primary);"></i> Cập Nhật Hồ Sơ Cá Nhân</h3>
+            
+            <form id="editProfileForm">
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label class="form-label">Họ và tên *</label>
+                  <input type="text" id="profName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Số điện thoại *</label>
+                  <input type="tel" id="profPhone" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Địa chỉ Email</label>
+                <input type="email" id="profEmail" class="form-control" readonly style="background: #F8FAFC; cursor: not-allowed;">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Địa chỉ nhận hàng mặc định *</label>
+                <input type="text" id="profAddress" class="form-control" placeholder="Số nhà, Tên đường, Phường, Quận, Thành phố...">
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="padding: 12px 28px;">
+                <i class="fas fa-save"></i> LƯU THAY ĐỔI
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- 3. TAB: ORDERS MANAGER -->
+        <div class="account-tab-pane" id="ordersTab" style="display: none;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+            <h3 style="color: var(--primary-noir); font-size: 1.25rem; margin: 0;"><i class="fas fa-box-open" style="color: var(--rose-primary);"></i> Quản Lý Đơn Hàng</h3>
+            
+            <!-- Order Filter Pills -->
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <button class="order-pill active" data-status="all">Tất cả đơn</button>
+              <button class="order-pill" data-status="ChoXacNhan">Đang chuẩn bị</button>
+              <button class="order-pill" data-status="DangGiao">Đang giao</button>
+              <button class="order-pill" data-status="HoanTat">Đã hoàn tất</button>
+            </div>
+          </div>
+
+          <div id="accountOrdersList">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- 4. TAB: LIVE ORDER TRACKING -->
+        <div class="account-tab-pane" id="trackingTab" style="display: none;">
+          <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 26px; box-shadow: var(--shadow-sm); margin-bottom: 24px;">
+            <h3 style="color: var(--primary-noir); font-size: 1.25rem; margin-bottom: 12px;"><i class="fas fa-shipping-fast" style="color: var(--rose-primary);"></i> Tra Cứu Lộ Trình Vận Đơn Trực Tuyến</h3>
+            <p style="font-size: 0.86rem; color: var(--text-muted); margin-bottom: 18px;">
+              Nhập mã vận đơn (Ví dụ: ROS-888888) để theo dõi hành trình đóng gói và vận chuyển hỏa tốc.
+            </p>
+
+            <div style="display: flex; gap: 10px; max-width: 500px;">
+              <input type="text" id="trackingOrderInput" class="form-control" placeholder="Nhập mã đơn hàng ROS-..." style="text-transform: uppercase;">
+              <button id="btnDoTrackOrder" class="btn btn-primary" style="white-space: nowrap;"><i class="fas fa-search"></i> TRA CỨU</button>
+            </div>
+          </div>
+
+          <div id="trackingResultBox">
+            <!-- Rendered live by JS -->
+          </div>
+        </div>
+
+        <!-- 5. TAB: WISHLIST -->
+        <div class="account-tab-pane" id="wishlistTab" style="display: none;">
+          <h3 style="color: var(--primary-noir); font-size: 1.25rem; margin-bottom: 20px;"><i class="fas fa-heart" style="color: var(--rose-primary);"></i> Danh Sách Mỹ Phẩm Yêu Thích</h3>
+          <div class="products-grid" id="accountWishlistGrid">
+            <!-- Dynamic Wishlist Items -->
+          </div>
+        </div>
+
+        <!-- 6. TAB: CHANGE PASSWORD -->
+        <div class="account-tab-pane" id="passwordTab" style="display: none;">
+          <div style="background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 26px; box-shadow: var(--shadow-sm); max-width: 500px;">
+            <h3 style="color: var(--primary-noir); font-size: 1.25rem; margin-bottom: 20px;"><i class="fas fa-lock" style="color: var(--rose-primary);"></i> Đổi Mật Khẩu Bảo Mật</h3>
+            
+            <form onsubmit="event.preventDefault(); showToast('Thành công', 'Mật khẩu của nàng đã được đổi thành công!', 'success'); this.reset();">
+              <div class="form-group">
+                <label class="form-label">Mật khẩu hiện tại *</label>
+                <input type="password" class="form-control" required placeholder="••••••••">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Mật khẩu mới *</label>
+                <input type="password" class="form-control" required placeholder="Tối thiểu 6 ký tự">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Xác nhận mật khẩu mới *</label>
+                <input type="password" class="form-control" required placeholder="Nhập lại mật khẩu mới">
+              </div>
+              <button type="submit" class="btn btn-primary" style="padding: 12px 28px;">
+                <i class="fas fa-key"></i> ĐỔI MẬT KHẨU
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 18px;">
+            <div class="logo-img-wrap">
+              <img src="assets/logo.jpg" alt="Roselle Logo" class="logo-img">
+            </div>
+            <div class="logo-text-box">
+              <span class="logo-brand-name">ROSELLE <span>COSMETICS</span></span>
+              <span class="logo-tagline">Mỹ Phẩm Hoàng Gia</span>
+            </div>
+          </a>
+          <p style="font-size: 0.88rem; color: #94A3B8; line-height: 1.7;">
+            Thương hiệu mỹ phẩm cao cấp tôn vinh vẻ đẹp kiêu sa, quyến rũ và tỏa sáng của phái đẹp với những công thức thuần khiết và thiết kế hoàng gia.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Chính Sách Khách Hàng</h4>
+          <ul class="footer-links">
+            <li><a href="account.html#trackingTab"><i class="fas fa-angle-right"></i> Tra Cứu Vận Đơn Trực Tuyến</a></li>
+            <li><a href="exclusive.html"><i class="fas fa-angle-right"></i> Quyền Lợi Thành Viên VIP Club</a></li>
+            <li><a href="checkout.html"><i class="fas fa-angle-right"></i> Hướng Dẫn Thanh Toán VietQR</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Hotline VIP</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt" style="color: var(--rose-primary);"></i>
+            <span>Hotline VIP: <strong>1800 6868</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <strong>ROSELLE COSMETICS CO., LTD</strong>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Engine -->
+  <script src="script.js"></script>
+</body>
+</html>
