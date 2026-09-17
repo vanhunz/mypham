@@ -1650,7 +1650,7 @@ const PRODUCTS_DATA = [
     isExclusive: true,
     exclusiveNote: "Bộ quà tặng giới hạn VIP Club"
   }
-];
+].filter(product => ![5, 28, 35, 36, 39, 40, 41, 43, 44, 45, 52, 55, 56, 58, 59, 63, 68].includes(product.id));
 
 // --------------------------------------------------------------------------
 // 3. UTILITY FUNCTIONS (FORMATTING & RENDERING)
@@ -3068,6 +3068,13 @@ function initProductsPage() {
   const categoryPills = document.querySelectorAll('.category-filter-link');
   const totalCountEl = document.querySelector('#catalogTotalCount');
 
+  document.querySelectorAll('[data-category-count]').forEach(countEl => {
+    const category = countEl.dataset.categoryCount;
+    countEl.textContent = category === 'all'
+      ? PRODUCTS_DATA.length
+      : PRODUCTS_DATA.filter(product => product.category === category).length;
+  });
+
   function renderCatalog() {
     let filtered = PRODUCTS_DATA.filter(p => {
       const matchCat = currentCategory === 'all' || p.category === currentCategory;
@@ -3358,6 +3365,15 @@ function initHomePage() {
     const bestItems = PRODUCTS_DATA.filter(p => p.badge === 'best' || p.rating >= 4.9).slice(0, 8);
     bestSellersGrid.innerHTML = bestItems.map(p => createProductCardHTML(p)).join('');
   }
+
+  const homeTotal = document.querySelector('#homeProductTotal');
+  if (homeTotal) homeTotal.textContent = PRODUCTS_DATA.length;
+  const homeCatalogCtaCount = document.querySelector('#homeCatalogCtaCount');
+  if (homeCatalogCtaCount) homeCatalogCtaCount.textContent = PRODUCTS_DATA.length;
+  document.querySelectorAll('[data-home-category-count]').forEach(countEl => {
+    const category = countEl.dataset.homeCategoryCount;
+    countEl.textContent = `${PRODUCTS_DATA.filter(product => product.category === category).length} Sản phẩm`;
+  });
 }
 
 // --------------------------------------------------------------------------
