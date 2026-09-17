@@ -461,6 +461,10 @@ img {
   height: 100%;
 }
 
+.mobile-search-strip {
+  display: none;
+}
+
 /* Brand Logo */
 .logo {
   display: flex;
@@ -1502,6 +1506,29 @@ img {
   display: flex;
   gap: 16px;
   margin-bottom: 28px;
+}
+
+.detail-meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 18px 0 22px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.detail-meta-list > span {
+  display: block;
+}
+
+.detail-meta-list strong,
+.detail-meta-list > span > span {
+  display: block;
+}
+
+.detail-meta-list strong {
+  margin-bottom: 2px;
+  color: var(--primary-noir);
 }
 
 .quantity-control {
@@ -2643,6 +2670,64 @@ img {
   transform: scale(1.1) rotate(5deg);
 }
 
+.search-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 12vh 20px 20px;
+  background: rgba(15, 23, 42, 0.42);
+  backdrop-filter: blur(5px);
+}
+
+.search-modal.active {
+  display: flex;
+}
+
+.search-modal-box {
+  width: min(680px, 100%);
+  max-height: min(680px, 78vh);
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid rgba(225, 29, 72, 0.16);
+  border-radius: 20px;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.24);
+}
+
+.search-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.search-modal-header input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  color: var(--primary-noir);
+  font-size: 1rem;
+  background: transparent;
+}
+
+.search-close,
+.chat-close-btn {
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.search-results-list {
+  max-height: 58vh;
+  overflow-y: auto;
+}
+
 .chat-box-modal {
   position: fixed;
   bottom: 100px;
@@ -3149,6 +3234,7 @@ img {
 
   .header { height: auto; min-height: var(--header-height); }
   .navbar { position: relative; min-height: var(--header-height); }
+  .header .container { padding-top: 8px; padding-bottom: 10px; }
   .logo { gap: 8px; }
   .logo-img-wrap { width: 40px; height: 40px; }
   .logo-brand-name { font-size: 1.08rem; letter-spacing: 0.03em; }
@@ -3156,6 +3242,57 @@ img {
   .nav-actions { gap: 8px; }
   .nav-actions .action-btn:nth-child(-n+2) { display: none; }
   .hamburger { display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; }
+
+  .mobile-search-strip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    margin-top: 8px;
+    padding: 0 14px;
+    background: #FFFFFF;
+    border: 1px solid rgba(225, 29, 72, 0.16);
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(225, 29, 72, 0.08);
+  }
+
+  .mobile-search-strip > i { color: var(--rose-primary); font-size: 0.9rem; }
+
+  .mobile-search-strip input {
+    min-width: 0;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--primary-noir);
+    font-size: 0.82rem;
+  }
+
+  .mobile-search-hint {
+    color: var(--text-light);
+    font-size: 0.68rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .search-modal { padding: 10px; align-items: flex-start; }
+  .search-modal-box { margin-top: 8px; border-radius: 16px; max-height: 82vh; }
+
+  .chat-toggle-btn {
+    right: 14px;
+    bottom: 16px;
+    width: 52px;
+    height: 52px;
+    font-size: 1.2rem;
+  }
+
+  .chat-box-modal {
+    right: 10px;
+    bottom: 78px;
+    width: min(360px, calc(100vw - 20px));
+    height: min(500px, calc(100vh - 110px));
+    border-radius: 18px;
+  }
 
   .nav-menu {
     top: 100%;
@@ -3204,6 +3341,13 @@ img {
   .detail-current-price { font-size: 1.65rem; }
   .detail-actions-box { flex-wrap: wrap; }
   .detail-actions-box .btn { flex: 1 1 180px; }
+  .detail-meta-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 1.5;
+  }
+  .detail-meta-list > span { display: block; }
   .tabs-nav { gap: 4px; overflow-x: auto; }
   .tab-btn { white-space: nowrap; padding: 10px 12px; font-size: 0.82rem; }
   .reviews-summary-card { grid-template-columns: 1fr; gap: 18px; }

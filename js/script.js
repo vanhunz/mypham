@@ -2193,6 +2193,17 @@ function syncHeaderAuth() {
 
 function initHeaderAndSearch() {
   const header = document.querySelector('.header');
+  const headerContainer = document.querySelector('.header .container');
+  if (headerContainer && !document.querySelector('#mobileSearchInput')) {
+    const mobileSearchStrip = document.createElement('div');
+    mobileSearchStrip.className = 'mobile-search-strip';
+    mobileSearchStrip.innerHTML = `
+      <i class="fas fa-search" aria-hidden="true"></i>
+      <input type="search" id="mobileSearchInput" placeholder="Tìm serum, son môi, kem dưỡng..." autocomplete="off">
+      <span class="mobile-search-hint">⌘ K</span>
+    `;
+    headerContainer.appendChild(mobileSearchStrip);
+  }
   window.addEventListener('scroll', () => {
     if (window.scrollY > 30) {
       header?.classList.add('scrolled');
@@ -2226,6 +2237,19 @@ function initHeaderAndSearch() {
   const searchClose = document.querySelector('.search-close');
   const searchInput = document.querySelector('#globalSearchInput');
   const searchResultsContainer = document.querySelector('#searchResultsList');
+  const mobileSearchInput = document.querySelector('#mobileSearchInput');
+
+  mobileSearchInput?.addEventListener('input', (e) => {
+    if (!searchModal || !searchInput) return;
+    searchModal.classList.add('active');
+    searchInput.value = e.target.value;
+    searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+
+  mobileSearchInput?.addEventListener('focus', () => {
+    searchModal?.classList.add('active');
+    searchInput?.focus();
+  });
 
   if (searchBtn && searchModal) {
     searchBtn.addEventListener('click', (e) => {
@@ -2236,6 +2260,7 @@ function initHeaderAndSearch() {
 
     searchClose?.addEventListener('click', () => {
       searchModal.classList.remove('active');
+      if (mobileSearchInput) mobileSearchInput.value = searchInput?.value || '';
     });
 
     searchModal.addEventListener('click', (e) => {
