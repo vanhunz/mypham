@@ -3382,6 +3382,36 @@ img {
   .vietqr-grid { gap: 16px; }
   .footer-grid { gap: 28px; }
 
+  .exclusive-banner-box {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px 18px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .exclusive-banner-content { min-width: 0; }
+  .exclusive-banner-content h2 { font-size: clamp(1.7rem, 8vw, 2.25rem) !important; }
+  .exclusive-banner-content p { font-size: 0.88rem !important; line-height: 1.65 !important; }
+  .exclusive-banner-content > div:last-child { flex-direction: column; gap: 10px !important; }
+  .exclusive-banner-content > div:last-child .btn { width: 100%; justify-content: center; }
+
+  .countdown-wrapper {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 12px;
+  }
+
+  .countdown-wrapper > span { font-size: 0.68rem !important; line-height: 1.45; }
+  .countdown-timer { gap: 6px; justify-content: space-between; }
+  .timer-box { min-width: 0; flex: 1; padding: 8px 4px; }
+  .timer-box span { font-size: 1.35rem; }
+  .timer-box small { font-size: 0.62rem; }
+
+  .exclusive-banner-img { height: min(72vw, 300px); border-width: 2px; }
+  .exclusive-banner-img > div { left: 12px; right: 12px; bottom: 12px; padding: 8px 10px !important; font-size: 0.68rem !important; }
+
   .content-panel { padding: 20px; border-radius: var(--radius-md); }
   .about-intro img { height: min(72vw, 340px); }
   .article-card { gap: 14px; }
