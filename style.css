@@ -1531,6 +1531,30 @@ img {
   color: var(--primary-noir);
 }
 
+.detail-meta-list > span > span {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  line-height: 1.55;
+}
+
+.footer-contact-item > i {
+  flex: 0 0 18px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.footer-contact-item > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .quantity-control {
   display: inline-flex;
   align-items: center;
@@ -3348,6 +3372,9 @@ img {
     line-height: 1.5;
   }
   .detail-meta-list > span { display: block; }
+  .detail-meta-list > span > span { font-size: 0.88rem; }
+  .footer-contact-item { font-size: 0.84rem; }
+  .footer-contact-item strong { white-space: nowrap; }
   .tabs-nav { gap: 4px; overflow-x: auto; }
   .tab-btn { white-space: nowrap; padding: 10px 12px; font-size: 0.82rem; }
   .reviews-summary-card { grid-template-columns: 1fr; gap: 18px; }
