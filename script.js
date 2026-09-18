@@ -2336,11 +2336,13 @@ function initHeaderAndSearch() {
           return;
         }
 
-        const matches = PRODUCTS_DATA.filter(p => 
-          p.name.toLowerCase().includes(query) || 
-          p.brand.toLowerCase().includes(query) ||
-          p.categoryName.toLowerCase().includes(query)
-        );
+        const matches = window.productSearchIndex
+          ? window.productSearchIndex.search(query).map(result => result.item)
+          : PRODUCTS_DATA.filter(p =>
+            p.name.toLowerCase().includes(query) ||
+            p.brand.toLowerCase().includes(query) ||
+            p.categoryName.toLowerCase().includes(query)
+          );
 
         if (matches.length === 0) {
           searchResultsContainer.innerHTML = '<p class="text-center" style="padding: 20px; color: var(--text-muted);">Không tìm thấy sản phẩm phù hợp.</p>';
@@ -3378,8 +3380,8 @@ function initProductDetailPage() {
 
   reviewForm?.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = document.querySelector('#reviewAuthorName')?.value || 'Khách hàng ẩn danh';
-    const comment = document.querySelector('#reviewCommentText')?.value;
+    const name = sanitizeUserText(document.querySelector('#reviewAuthorName')?.value || 'Khách hàng ẩn danh');
+    const comment = sanitizeUserText(document.querySelector('#reviewCommentText')?.value || '');
 
     const newRev = document.createElement('div');
     newRev.className = 'review-item-card';
@@ -3577,6 +3579,19 @@ function loadExternalScript(src) {
   });
 }
 
+function sanitizeUserText(value) {
+  if (window.DOMPurify) {
+    return window.DOMPurify.sanitize(value, { ALLOWED_TAGS: [], ALLOWED_ATTR: [] });
+  }
+  return String(value).replace(/[&<>"']/g, character => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  }[character]));
+}
+
 function initPlugins() {
   const aosTargets = document.querySelectorAll('.section-padding, .content-panel, .category-card, .product-card');
   aosTargets.forEach((element, index) => {
@@ -3586,10 +3601,33 @@ function initPlugins() {
 
   const loadAos = loadExternalScript('https://unpkg.com/aos@2.3.4/dist/aos.js');
   const loadSwiper = loadExternalScript('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js');
+  const loadFuse = loadExternalScript('https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js');
+  const loadPurify = loadExternalScript('https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js');
+  const loadIMask = loadExternalScript('https://cdn.jsdelivr.net/npm/imask@7.6.1/dist/imask.min.js');
 
-  Promise.all([loadAos, loadSwiper]).then(() => {
+  Promise.allSettled([loadAos, loadSwiper, loadFuse, loadPurify, loadIMask]).then(() => {
+    if (window.Fuse) {
+      window.productSearchIndex = new window.Fuse(PRODUCTS_DATA, {
+        keys: [
+          { name: 'name', weight: 0.5 },
+          { name: 'brand', weight: 0.2 },
+          { name: 'categoryName', weight: 0.2 },
+          { name: 'description', weight: 0.1 }
+        ],
+        threshold: 0.4,
+        ignoreLocation: true,
+        minMatchCharLength: 2
+      });
+    }
+
     if (window.AOS) {
       window.AOS.init({ duration: 650, once: true, offset: 70 });
+    }
+
+    if (window.IMask) {
+      document.querySelectorAll('#checkoutPhone, #contactPhone').forEach(input => {
+        window.IMask(input, { mask: '0000 000 000' });
+      });
     }
 
     const productGrid = document.querySelector('#bestSellersGrid');
