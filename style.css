@@ -2979,6 +2979,7 @@ img {
   display: inline-block;
   color: #FFFFFF !important;
   -webkit-text-fill-color: #FFFFFF !important;
+  font-weight: 900;
   text-shadow: 0 1px 8px rgba(255, 255, 255, 0.16);
   white-space: nowrap;
 }
