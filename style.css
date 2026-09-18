@@ -2975,6 +2975,21 @@ img {
   margin-bottom: 20px;
 }
 
+.footer .logo-brand-name {
+  color: #FFFFFF;
+  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.16);
+}
+
+.footer .logo-brand-name span {
+  color: var(--rose-accent);
+  background: none;
+  -webkit-text-fill-color: var(--rose-accent);
+}
+
+.footer .logo-tagline {
+  color: var(--royal-gold-light);
+}
+
 .footer-brand-description p {
   color: #94A3B8;
   font-size: 0.82rem;
