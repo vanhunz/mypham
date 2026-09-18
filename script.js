@@ -23,7 +23,12 @@ if (siteFooter && !siteFooter.querySelector('.footer-grid')) {
             <div class="logo-img-wrap"><img src="assets/logo.jpg" alt="Roselle Logo" class="logo-img"></div>
             <div class="logo-text-box"><span class="logo-brand-name">ROSELLE <span>COSMETICS</span></span><span class="logo-tagline">Mỹ Phẩm Hoàng Gia</span></div>
           </a>
-          <p style="font-size: 0.88rem; color: #94A3B8; line-height: 1.7; margin-bottom: 20px;">Thương hiệu mỹ phẩm cao cấp tôn vinh vẻ đẹp tự nhiên và sự tự tin của phái đẹp.</p>
+          <div class="footer-brand-description">
+            <p>Vẻ đẹp không cần phô trương, chỉ cần đủ tinh tế để được nhận ra. ROSELLE COSMETICS mang đến những lựa chọn làm đẹp được tạo nên dành cho người phụ nữ hiện đại – thanh lịch, tự tin và luôn biết trân trọng giá trị riêng của mình.</p>
+            <p>✨ Hãy để mỗi khoảnh khắc chăm sóc bản thân trở thành một nghi thức tận hưởng.</p>
+            <p>ROSELLE COSMETICS – nơi vẻ đẹp riêng của bạn được tỏa sáng theo cách tinh tế nhất.</p>
+            <p>👉 Khám phá ROSELLE COSMETICS ngay hôm nay và bắt đầu hành trình chạm đến phiên bản đẹp nhất của chính bạn.</p>
+          </div>
           <div class="footer-socials">
             <a href="https://www.facebook.com/roselle.cosmetics.vn" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook Fanpage Roselle"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -59,6 +64,14 @@ if (siteFooter && !siteFooter.querySelector('.footer-grid')) {
       </div>
       <div class="footer-bottom"><p>© 2026 ROSELLE COSMETICS · Mỹ phẩm chính hãng cho vẻ đẹp rạng ngời.</p></div>
     </div>`;
+}
+
+const footerBrandColumn = document.querySelector('.footer .footer-grid .footer-col');
+if (footerBrandColumn && !footerBrandColumn.querySelector('.footer-brand-description')) {
+  const footerBrandText = document.createElement('div');
+  footerBrandText.className = 'footer-brand-description';
+  footerBrandText.innerHTML = '<p>Vẻ đẹp không cần phô trương, chỉ cần đủ tinh tế để được nhận ra. ROSELLE COSMETICS mang đến những lựa chọn làm đẹp được tạo nên dành cho người phụ nữ hiện đại - thanh lịch, tự tin và luôn biết trân trọng giá trị riêng của mình.</p><p>Hãy để mỗi khoảnh khắc chăm sóc bản thân trở thành một nghi thức tận hưởng.</p><p>ROSELLE COSMETICS - nơi vẻ đẹp riêng của bạn được tỏa sáng theo cách tinh tế nhất.</p><p>Khám phá ROSELLE COSMETICS ngay hôm nay và bắt đầu hành trình chạm đến phiên bản đẹp nhất của chính bạn.</p>';
+  footerBrandColumn.querySelector('p')?.replaceWith(footerBrandText);
 }
 
 // --------------------------------------------------------------------------

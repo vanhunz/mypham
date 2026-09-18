@@ -2970,6 +2970,22 @@ img {
   letter-spacing: 0.04em;
 }
 
+.footer-brand-description {
+  max-width: 360px;
+  margin-bottom: 20px;
+}
+
+.footer-brand-description p {
+  color: #94A3B8;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.footer-brand-description p:last-child {
+  margin-bottom: 0;
+}
+
 .footer-links {
   list-style: none;
   display: flex;
