@@ -1050,6 +1050,7 @@ img {
   transition: all var(--transition-normal);
   display: flex;
   flex-direction: column;
+  min-height: 506px;
   position: relative;
 }
 
@@ -1158,6 +1159,7 @@ img {
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-height: 194px;
 }
 
 .product-brand {
@@ -1192,6 +1194,7 @@ img {
   gap: 6px;
   font-size: 0.8rem;
   margin-bottom: 12px;
+  min-height: 20px;
 }
 
 .stars {
@@ -1207,9 +1210,12 @@ img {
 
 .product-price-box {
   margin-top: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: baseline;
   gap: 10px;
+  min-height: 30px;
+  white-space: nowrap;
 }
 
 .product-price {
@@ -1217,12 +1223,14 @@ img {
   font-weight: 800;
   color: var(--rose-primary);
   font-family: var(--font-heading);
+  font-variant-numeric: tabular-nums;
 }
 
 .product-old-price {
   font-size: 0.85rem;
   color: var(--text-light);
   text-decoration: line-through;
+  font-variant-numeric: tabular-nums;
 }
 
 /* --------------------------------------------------------------------------
