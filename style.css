@@ -1466,7 +1466,8 @@ img {
 .detail-price-box {
   display: flex;
   align-items: baseline;
-  gap: 16px;
+  gap: 18px;
+  flex-wrap: wrap;
   padding: 16px 20px;
   background: var(--rose-bubble);
   border-radius: var(--radius-md);
@@ -1478,13 +1479,20 @@ img {
   font-size: 2.2rem;
   font-weight: 800;
   color: var(--rose-primary);
-  font-family: var(--font-heading);
+  font-family: 'Montserrat', sans-serif !important;
+  font-variant-numeric: lining-nums tabular-nums;
+  line-height: 1.2;
+  letter-spacing: 0;
 }
 
 .detail-old-price {
   font-size: 1.2rem;
   color: var(--text-light);
   text-decoration: line-through;
+  font-family: 'Montserrat', sans-serif !important;
+  font-variant-numeric: lining-nums tabular-nums;
+  line-height: 1.2;
+  letter-spacing: 0;
 }
 
 .detail-save-badge {
