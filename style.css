@@ -1211,7 +1211,7 @@ img {
 .product-price-box {
   margin-top: auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: 132px minmax(0, 1fr);
   align-items: baseline;
   gap: 10px;
   min-height: 30px;
@@ -1224,6 +1224,7 @@ img {
   color: var(--rose-primary);
   font-family: var(--font-heading);
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .product-old-price {
@@ -3382,6 +3383,7 @@ img {
   .product-title { font-size: 0.84rem; min-height: 38px; }
   .product-price { font-size: 1rem; }
   .product-old-price { font-size: 0.72rem; }
+  .product-price-box { grid-template-columns: minmax(0, 1fr) auto; gap: 6px; }
   .product-quick-add { display: none; }
 
   .page-banner { padding: 42px 0; }
