@@ -2976,14 +2976,22 @@ img {
 }
 
 .footer .logo-brand-name {
-  color: #FFFFFF;
+  display: inline-block;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
   text-shadow: 0 1px 8px rgba(255, 255, 255, 0.16);
+  white-space: nowrap;
 }
 
 .footer .logo-brand-name span {
-  color: var(--rose-accent);
+  color: var(--rose-accent) !important;
   background: none;
   -webkit-text-fill-color: var(--rose-accent);
+}
+
+.footer .logo-text-box {
+  min-width: 0;
+  flex: 1;
 }
 
 .footer .logo-tagline {
