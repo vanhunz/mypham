@@ -2,6 +2,17 @@
    ROSELLE COSMETICS - MASTER JAVASCRIPT ENGINE (A-Z COMPLETE SYSTEM)
    ========================================================================== */
 
+if (!window.gtag) {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-8Z13WDVBR1');
+  const analyticsScript = document.createElement('script');
+  analyticsScript.async = true;
+  analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-8Z13WDVBR1';
+  document.head.appendChild(analyticsScript);
+}
+
 // --------------------------------------------------------------------------
 // 1. STORAGE KEYS & INITIAL DATA STATE
 // --------------------------------------------------------------------------
