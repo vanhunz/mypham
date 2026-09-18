@@ -1210,8 +1210,8 @@ img {
 
 .product-price-box {
   margin-top: auto;
-  display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
+  display: flex;
+  justify-content: space-between;
   align-items: baseline;
   gap: 10px;
   min-height: 30px;
@@ -1219,7 +1219,7 @@ img {
 }
 
 .product-price {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 800;
   color: var(--rose-primary);
   font-family: var(--font-heading);
@@ -1228,10 +1228,12 @@ img {
 }
 
 .product-old-price {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--text-light);
   text-decoration: line-through;
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  text-align: right;
 }
 
 /* --------------------------------------------------------------------------
@@ -3381,9 +3383,9 @@ img {
   .product-card { min-width: 0; }
   .product-info { padding: 12px; }
   .product-title { font-size: 0.84rem; min-height: 38px; }
-  .product-price { font-size: 1rem; }
-  .product-old-price { font-size: 0.72rem; }
-  .product-price-box { grid-template-columns: minmax(0, 1fr) auto; gap: 6px; }
+  .product-price { font-size: 0.9rem; }
+  .product-old-price { font-size: 0.9rem; }
+  .product-price-box { gap: 6px; }
   .product-quick-add { display: none; }
 
   .page-banner { padding: 42px 0; }
