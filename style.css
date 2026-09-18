@@ -1222,7 +1222,7 @@ img {
   font-size: 1rem;
   font-weight: 800;
   color: var(--rose-primary);
-  font-family: var(--font-body);
+  font-family: 'Montserrat', sans-serif !important;
   font-variant-numeric: lining-nums tabular-nums;
   line-height: 1.2;
   letter-spacing: 0;
@@ -1233,7 +1233,7 @@ img {
   font-size: 1rem;
   color: var(--text-light);
   text-decoration: line-through;
-  font-family: var(--font-body);
+  font-family: 'Montserrat', sans-serif !important;
   font-variant-numeric: lining-nums tabular-nums;
   line-height: 1.2;
   letter-spacing: 0;
