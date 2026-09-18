@@ -3567,6 +3567,61 @@ function initCountdowns() {
   setInterval(update, 1000);
 }
 
+function loadExternalScript(src) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = resolve;
+    script.onerror = reject;
+    document.head.appendChild(script);
+  });
+}
+
+function initPlugins() {
+  const aosTargets = document.querySelectorAll('.section-padding, .content-panel, .category-card, .product-card');
+  aosTargets.forEach((element, index) => {
+    element.dataset.aos = element.classList.contains('product-card') ? 'fade-up' : 'fade-up';
+    element.dataset.aosDelay = String(Math.min((index % 4) * 80, 240));
+  });
+
+  const loadAos = loadExternalScript('https://unpkg.com/aos@2.3.4/dist/aos.js');
+  const loadSwiper = loadExternalScript('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js');
+
+  Promise.all([loadAos, loadSwiper]).then(() => {
+    if (window.AOS) {
+      window.AOS.init({ duration: 650, once: true, offset: 70 });
+    }
+
+    const productGrid = document.querySelector('#bestSellersGrid');
+    if (productGrid && window.Swiper && productGrid.children.length > 0) {
+      productGrid.classList.add('swiper');
+      const wrapper = document.createElement('div');
+      wrapper.className = 'swiper-wrapper';
+      while (productGrid.firstElementChild) {
+        const slide = productGrid.firstElementChild;
+        slide.classList.add('swiper-slide');
+        wrapper.appendChild(slide);
+      }
+      productGrid.appendChild(wrapper);
+      const pagination = document.createElement('div');
+      pagination.className = 'swiper-pagination';
+      productGrid.appendChild(pagination);
+      new window.Swiper(productGrid, {
+        slidesPerView: 1,
+        spaceBetween: 18,
+        pagination: { el: pagination, clickable: true },
+        breakpoints: {
+          640: { slidesPerView: 2 },
+          960: { slidesPerView: 3 },
+          1200: { slidesPerView: 4 }
+        }
+      });
+    }
+  }).catch(() => {
+    // The site remains usable if an external plugin is unavailable.
+  });
+}
+
 // --------------------------------------------------------------------------
 // 20. MASTER DOM READY DISPATCHER
 // --------------------------------------------------------------------------
@@ -3594,4 +3649,6 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     initHomePage();
   }
+
+  initPlugins();
 });

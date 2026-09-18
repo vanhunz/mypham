@@ -7,6 +7,27 @@
    -------------------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
+@import url('https://unpkg.com/aos@2.3.4/dist/aos.css');
+@import url('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+
+.swiper.products-grid {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 36px;
+}
+
+.swiper.products-grid .swiper-wrapper {
+  display: flex;
+}
+
+.swiper.products-grid .swiper-slide {
+  height: auto;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--rose-primary);
+}
+
 :root {
   /* Roselle Signature Palette */
   --rose-primary: #E11D48;
