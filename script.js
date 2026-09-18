@@ -13,6 +13,54 @@ if (!window.gtag) {
   document.head.appendChild(analyticsScript);
 }
 
+const siteFooter = document.querySelector('.footer');
+if (siteFooter && !siteFooter.querySelector('.footer-grid')) {
+  siteFooter.innerHTML = `
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 18px;">
+            <div class="logo-img-wrap"><img src="assets/logo.jpg" alt="Roselle Logo" class="logo-img"></div>
+            <div class="logo-text-box"><span class="logo-brand-name">ROSELLE <span>COSMETICS</span></span><span class="logo-tagline">Mỹ Phẩm Hoàng Gia</span></div>
+          </a>
+          <p style="font-size: 0.88rem; color: #94A3B8; line-height: 1.7; margin-bottom: 20px;">Thương hiệu mỹ phẩm cao cấp tôn vinh vẻ đẹp tự nhiên và sự tự tin của phái đẹp.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/roselle.cosmetics.vn" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook Fanpage Roselle"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Danh Mục Sản Phẩm</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=skincare"><i class="fas fa-angle-right"></i> Chăm Sóc Da</a></li>
+            <li><a href="products.html?category=makeup"><i class="fas fa-angle-right"></i> Trang Điểm</a></li>
+            <li><a href="products.html?category=son-moi"><i class="fas fa-angle-right"></i> Son Môi</a></li>
+            <li><a href="products.html?category=serum"><i class="fas fa-angle-right"></i> Serum & Tinh Chất</a></li>
+            <li><a href="products.html?category=nuoc-hoa"><i class="fas fa-angle-right"></i> Nước Hoa Niche</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Chính Sách Khách Hàng</h4>
+          <ul class="footer-links">
+            <li><a href="account.html#trackingTab"><i class="fas fa-angle-right"></i> Tra Cứu Vận Đơn</a></li>
+            <li><a href="exclusive.html"><i class="fas fa-angle-right"></i> Quyền Lợi Thành Viên VIP</a></li>
+            <li><a href="checkout.html"><i class="fas fa-angle-right"></i> Hướng Dẫn Thanh Toán</a></li>
+            <li><a href="about.html"><i class="fas fa-angle-right"></i> Chính Sách Đổi Trả</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Liên Hệ</h4>
+          <p class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>88 Đường Hoa Hồng, Quận 1, TP. Hồ Chí Minh</span></p>
+          <p class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>1800 6868</span></p>
+          <p class="footer-contact-item"><i class="fas fa-envelope"></i><span>cskh@roselle.vn</span></p>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 ROSELLE COSMETICS · Mỹ phẩm chính hãng cho vẻ đẹp rạng ngời.</p></div>
+    </div>`;
+}
+
 // --------------------------------------------------------------------------
 // 1. STORAGE KEYS & INITIAL DATA STATE
 // --------------------------------------------------------------------------
